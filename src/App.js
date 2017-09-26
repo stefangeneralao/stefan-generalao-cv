@@ -3,6 +3,7 @@ import './App.css';
 import Header from './Header.js';
 import Drawer from './Drawer.js';
 import Body from './Body.js'
+import Footer from './Footer.js'
 
 class App extends Component {
   constructor() {
@@ -25,6 +26,7 @@ class App extends Component {
           selectedSection={this.state.selectedSection}
         />
         <Body />
+        <Footer />
       </div>
     );
   }
