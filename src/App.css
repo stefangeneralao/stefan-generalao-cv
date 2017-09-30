@@ -52,16 +52,23 @@
 }
 
 .Drawer > .ListItem:hover {
-  background-color: #eee;
+  background-color: #f0f0f0;
   transition: 100ms;
-  padding-left: 30px;
 }
 
 .Drawer > .SelectedListItem {
   height: 60px;
   transition: 400ms;
-  padding-left: 35px;
-  background-color: #ccc;
+  padding-left: 30px;
+  background-color: #ddd;
+}
+
+.Drawer > .Inset {
+	padding-left: 55px;
+}
+
+.Drawer > .Inset.SelectedListItem {
+	padding-left: 60px;
 }
 
 .Drawer h2{
@@ -73,7 +80,7 @@
 
 .Divider {
   height: 1px;
-  background-color: #eee;
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .Footer {

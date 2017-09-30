@@ -2,14 +2,13 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './Header.js';
 import Drawer from './Drawer.js';
-import Body from './Body.js'
-import Footer from './Footer.js'
+import Body from './Body.js';
+import Footer from './Footer.js';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {selectedSection: "Intro"}
-
     this.selectSection = this.selectSection.bind(this);
   }
 
@@ -25,7 +24,9 @@ class App extends Component {
           selectSection={this.selectSection}
           selectedSection={this.state.selectedSection}
         />
-        <Body />
+        <Body
+          selectedSection={this.state.selectedSection}
+        />
         <Footer />
       </div>
     );
