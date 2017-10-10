@@ -10,34 +10,10 @@ class Body extends Component {
         cards.push(<Card content={card.content} key={index}/>);
       }
     });
-
-    console.log(cards);
-
+		
     return (
       <div>
         {cards}
-
-        {/* <Card
-          content={[
-            {title: "Card 1"},
-            {divider: "full"},
-            {subtitle: "Subtitle 1"},
-            {paragraph: "Paragraph 1"},
-            {subtitle: "Subtitle 2"},
-            {paragraph: "Paragraph 2"}
-          ]}
-        />
-
-        <Card
-          content={[
-            {title: "Card 2"},
-            {divider: "full"},
-            {subtitle: "Subtitle 1"},
-            {paragraph: "Paragraph 1"},
-            {subtitle: "Subtitle 2"},
-            {paragraph: "Paragraph 2"}
-          ]}
-        /> */}
       </div>
     )
   }

@@ -2,12 +2,16 @@ const storage = {
   sections: [
     {id: "Intro"},
     {id: "Högskolekurser"},
-    {id: "Skickligheter"},
-		{id: "Maskininlärning", inset: true},
-		{id: "Webbteknologier", inset: true},
-		{id: "Hårdvara", inset: true},
-		{id: "3D-printing och design", inset: true},
-		{id: "Övrigt", inset: true},
+    {
+			id: "Skickligheter",
+			subSections: [
+				{id: "Maskininlärning"},
+				{id: "Webbteknologier"},
+				{id: "Hårdvara"},
+				{id: "3D-printing och design"},
+				{id: "Övrigt"},
+			]
+		},
     {id: "Arbetslivserfarenhet"},
     {id: "Github-projekt"},
     {id: "Språk"},
