@@ -1,99 +1,117 @@
 import React, {Component} from 'react';
 import './App.css';
+import $ from 'jquery';
 
-class ListItem extends Component {
+class SubSectionListItem extends Component {
   onClickHandler() {
-    this.props.selectSection(this.props.label)
+    this.props.selectSection(this.props.id)
   }
 
-  render() {
-    let className = "";
+	isSelected() {
+		if(this.props.selectedSection === this.props.id) {
+			return true;
+		} else {
+			return false;
+		}
+	}
 
-    if (this.props.selectedSection === this.props.label) {
-      className += "SelectedListItem ";
-    } else {
-      className += "ListItem ";
-    }
-
-    if (this.props.inset) {
-      className += "Inset ";
-    }
-
-    // return (
-    //   <li className={className} onClick={() => this.onClickHandler()}>
-    //     <h2>{this.props.label}</h2>
-    //   </li>
-    // )
+	render() {
+		let className = "subsection-list-item";
+		if(this.isSelected()) {
+			className += " active";
+		}
 
 		return (
-      <li>
-
-      </li>
+			<li onClick={() => {this.onClickHandler()}} className={className}>
+				{this.props.id}
+			</li>
 		)
+	}
+}
+
+class SectionListItem extends Component {
+  onClickHandler() {
+    this.props.selectSection(this.props.id)
   }
+
+	isSelected() {
+		if(this.props.selectedSection === this.props.id) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	render() {
+		let className = "section-list-item";
+		if(this.isSelected()) {
+			className += " active";
+		}
+
+		return (
+			<li onClick={() => {this.onClickHandler()}} className={className}>
+				{this.props.id}
+			</li>
+		)
+	}
 }
 
 class Drawer extends Component {
+  onClickHandler(sectionID) {
+    this.props.selectSection(sectionID)
+  }
+
   createSectionsList() {
     const sectionsList = window.storage.sections;
 
-		console.log(sectionsList);
-
+    // Iterate through every section.
     const result = sectionsList.map((section) => {
-      // return (
-      //   <ListItem
-			// 		key={section.id}
-			// 		label={section.id}
-			// 		selectSection={this.props.selectSection}
-			// 		selectedSection={this.props.selectedSection}
-			// 		inset={section.inset}>
-			// 	</ListItem>
-      // )
 
-			if(section.subSections) {
-				console.log(section.id + " has subSections");
+      // If section has subSections,
+      // Then create a collapsible listItem.
+      if (section.subSections) {
 
-				const subSectionsList = section.subSections.map(
-					(subSection) => {
-						return (
-							<li key={subSection.id}>
-								{subSection.id}
-							</li>
-						)
-					}
-				)
+        // Create the list of subSections.
+        const subSectionsList = section.subSections.map((subSection) => {
+          return (
+						<SubSectionListItem
+							key={subSection.id}
+							selectSection={this.props.selectSection}
+							selectedSection={this.props.selectedSection}
+							id={subSection.id}
+						/>
+          )
+        })
 
-				return (
-					<li key={section.id}>
-						<ul className="collapsible" key={section.id}>
-							<li>
-								<div className="collapsible-header">
-									{section.id}
-								</div>
-								<div className="collapsible-body">
-									<ul>
-										{subSectionsList}
-									</ul>
-								</div>
-							</li>
-						</ul>
-					</li>
-				)
-			} else {
-				console.log(section.id + " has no subSections");
-				return (
-					<li key={section.id}>
-						{section.id}
-					</li>
-				)
-			}
+        // Return collapsible SubSection-component.
+        return (
+					<SubSection
+						key={section.id}
+						section={section}
+						subSectionsList={subSectionsList}
+					/>
+        )
+
+        // If section has no subSections,
+        // Then create listItem.
+      } else {
+        return (
+					<SectionListItem
+						key={section.id}
+						selectSection={this.props.selectSection}
+						selectedSection={this.props.selectedSection}
+						id={section.id}
+					/>
+        )
+      }
     });
 
-		return (
-			<ul>
-				{result}
-			</ul>
-		)
+    // Return sectionsList.
+    return (
+      <ul className="noselect">
+        {result}
+      </ul>
+    )
   }
 
   render() {
@@ -102,68 +120,29 @@ class Drawer extends Component {
         {this.createSectionsList()}
       </div>
     );
-
-    // return (
-    //   <div className="Drawer">
-    //     <ul className="collapsible" data-collapsible="accordion">
-    //       <li>
-    //         <div className="collapsible-header">First</div>
-    //         <div className="collapsible-body">
-    //           <span>Lorem ipsum dolor sit amet.</span>
-    //         </div>
-    //       </li>
-    //       <li>
-    //         <div className="collapsible-header">Second</div>
-    //         <div className="collapsible-body">
-    //           <span>Lorem ipsum dolor sit amet.</span>
-    //         </div>
-    //       </li>
-    //       <li>
-    //         <div className="collapsible-header">Third</div>
-    //         <div className="collapsible-body">
-    //           <span>Lorem ipsum dolor sit amet.</span>
-    //         </div>
-    //       </li>
-    //       <li>
-    //         <div className="collapsible-header">Third</div>
-    //         <div className="collapsible-body">
-    //           <span>Lorem ipsum dolor sit amet.</span>
-    //         </div>
-    //       </li>
-    //       <li>
-    //         <div className="collapsible-header">Third</div>
-    //         <div className="collapsible-body">
-    //           <span>Lorem ipsum dolor sit amet.</span>
-    //         </div>
-    //       </li>
-    //       <li>
-    //         <div className="collapsible-header">Third</div>
-    //         <div className="collapsible-body">
-    //           <span>Lorem ipsum dolor sit amet.</span>
-    //         </div>
-    //       </li>
-    //       <li>
-    //         <div className="collapsible-header">Third</div>
-    //         <div className="collapsible-body">
-    //           <span>Lorem ipsum dolor sit amet.</span>
-    //         </div>
-    //       </li>
-    //       <li>
-    //         <div className="collapsible-header">Third</div>
-    //         <div className="collapsible-body">
-    //           <span>Lorem ipsum dolor sit amet.</span>
-    //         </div>
-    //       </li>
-    //       <li>
-    //         <div className="collapsible-header">Third</div>
-    //         <div className="collapsible-body">
-    //           <span>Lorem ipsum dolor sit amet.</span>
-    //         </div>
-    //       </li>
-    //     </ul>
-    //   </div>
-    // )
   }
+}
+
+class SubSection extends Component{
+	componentDidMount() {
+		$(".subsection-body").hide();
+    $("#" + this.props.section.id).children(".subsection-header").click(function() {
+			$(this).siblings(".subsection-body").slideToggle();
+    });
+	}
+
+	render() {
+		return (
+			<div className="subsection" id={this.props.section.id}>
+			  <li className="subsection-header section-list-item">
+			    {this.props.section.id}
+			  </li>
+			  <ul className="subsection-body">
+			    {this.props.subSectionsList}
+			  </ul>
+			</div>
+		)
+	}
 }
 
 export default Drawer;

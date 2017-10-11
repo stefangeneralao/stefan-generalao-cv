@@ -10,7 +10,7 @@ class Card extends Component {
 
       switch (itemKey) {
         case 'title':
-          result = (<h3>{itemValue}</h3>)
+          result = (<h2>{itemValue}</h2>)
           break;
 
         case 'divider':
@@ -18,12 +18,27 @@ class Card extends Component {
           break;
 
         case 'subtitle':
-          result = (<h4>{itemValue}</h4>)
+          result = (<h3>{itemValue}</h3>)
           break;
 
         case 'paragraph':
           result = (<p>{itemValue}</p>)
           break;
+
+				case 'progressbar':
+					result = (
+						<div className="progressbar">
+							<div className="progress" style={{width: itemValue + "%"}}/>
+						</div>
+					)
+					break;
+
+				case 'link':
+					console.log(itemValue);
+					result = (
+						<a href={itemValue} target="blank"><p>{itemValue}</p></a>
+					)
+					break;
 
         default:
           result = (<p>{itemValue}</p>)

@@ -10,7 +10,7 @@ class Body extends Component {
         cards.push(<Card content={card.content} key={index}/>);
       }
     });
-		
+
     return (
       <div>
         {cards}
@@ -22,60 +22,6 @@ class Body extends Component {
     return (
       <div className="Body">
         {this.createContent()}
-        {/* <Card
-          content={[
-            {title: "Card 1"},
-            {divider: "full"},
-            {subtitle: "Subtitle 1"},
-            {paragraph: "Paragraph 1"},
-            {subtitle: "Subtitle 2"},
-            {paragraph: "Paragraph 2"}
-          ]}
-        />
-
-        <Card
-          content={[
-            {title: "Card 2"},
-            {divider: "full"},
-            {subtitle: "Subtitle 1"},
-            {paragraph: "Paragraph 1"},
-            {subtitle: "Subtitle 2"},
-            {paragraph: "Paragraph 2"}
-          ]}
-        />
-
-        <Card
-          content={[
-            {title: "Card 3"},
-            {divider: "full"},
-            {subtitle: "Subtitle 1"},
-            {paragraph: "Paragraph 1"},
-            {subtitle: "Subtitle 2"},
-            {paragraph: "Paragraph 2"}
-          ]}
-        />
-
-        <Card
-          content={[
-            {title: "Card 4"},
-            {divider: "full"},
-            {subtitle: "Subtitle 1"},
-            {paragraph: "Paragraph 1"},
-            {subtitle: "Subtitle 2"},
-            {paragraph: "Paragraph 2"}
-          ]}
-        />
-
-        <Card
-          content={[
-            {title: "Card 5"},
-            {divider: "full"},
-            {subtitle: "Subtitle 1"},
-            {paragraph: "Paragraph 1"},
-            {subtitle: "Subtitle 2"},
-            {paragraph: "Paragraph 2"}
-          ]}
-        /> */}
       </div>
     );
   }
