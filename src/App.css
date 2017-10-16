@@ -1,3 +1,7 @@
+body {
+	background-color: #444;
+}
+
 h3 {
 	margin-top: 30px;
 	margin-bottom: 10px;
@@ -15,10 +19,14 @@ h3 {
   z-index: 1;
 }
 
+.Header > .menu-icon {
+	display: none;
+}
+
 .Header > h1 {
   padding-left: 105px;
   font-size: 2.5em;
-  line-height: 110px;
+	margin-top: 60px;
 }
 
 .Body {
@@ -28,7 +36,7 @@ h3 {
   margin-top: 160px;
   margin-bottom: 160px;
   padding: 5px;
-  z-index: 2;
+  z-index: 3;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -42,7 +50,7 @@ h3 {
   margin: 30px;
   background-color: #fff;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-  border-radius: 3px;
+  border-radius: 2dp;
 	text-align: justify;
 }
 
@@ -60,9 +68,11 @@ h3 {
   bottom: 0;
   width: 300px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
-  z-index: 3;
+  z-index: 4;
   overflow-y: scroll;
   height: 100%;
+	transition: 450ms;
+	transition-timing-function: cubic-bezier(.4,0,.2,1);
 }
 
 ul {
@@ -71,16 +81,11 @@ ul {
 }
 
 li {
-	list-style: none;
 	line-height: 60px;
 	font-size: 0.75rem;
-	padding-left: 0;
 	font-weight: 600;
 	transition: 400ms;
-}
-
-li:hover {
-	transition: 150ms;
+	white-space: nowrap;
 }
 
 .section-list-item {
@@ -88,29 +93,33 @@ li:hover {
 }
 
 .section-list-item:hover {
-	padding-left: 30px;
+	padding-left: 25px;
 	background-color: #eee;
 }
 
 .section-list-item.active {
-	padding-left: 30px;
-	background-color: #ddd;
+	padding-left: 28px;
+	background-color: #fff;
+	color: #00B8D4;
+	transition: 550ms;
 }
 
 .subsection-list-item {
-	padding-left: 25px;
+	padding-left: 40px;
 	background-color: #555;
 	color: white;
 }
 
 .subsection-list-item:hover {
-	padding-left: 35px;
-	background-color: #444;
+	padding-left: 45px;
+	background-color: #4d4d4d;
 }
 
 .subsection-list-item.active {
-	padding-left: 35px;
-	background-color: #333;
+	padding-left: 48px;
+	background-color: #555;
+	color: #00E5FF;
+	transition: 550ms;
 }
 
 .Divider {
@@ -130,6 +139,7 @@ li:hover {
   color: #ddd;
   padding-left: 105px;
 	font-size: 0.85rem;
+	z-index: 2;
 }
 
 .noselect {
@@ -143,15 +153,84 @@ li:hover {
 }
 
 .progressbar {
-	max-width: 500px;
+	max-width: 560px;
 	height: 4px;
 	background-color: #ddd;
-	border-radius: 10px;
+	border-radius: 99px;
 }
 
 .progressbar > .progress {
 	background-color: #00BCD4;
 	height: 100%;
 	width: 0;
-	border-radius: 4px;
+	border-radius: 99px;
+}
+
+.avatar-section > .background-avatar {
+	height: 160px;
+	width: 100%;
+	filter: hue-rotate(177deg) invert(1) contrast(95%) brightness(120%) saturate(170%);
+	z-index: 2;
+}
+
+/*Tablet*/
+@media screen and (max-width: 950px) {
+	.Drawer {
+		width: 0;
+	}
+
+	.Body {
+		margin-left: 0;
+	}
+
+	.Header, .Footer {
+		left: 0;
+	}
+
+	.Header > .menu-icon {
+		filter: invert(1);
+		position: absolute;
+		width: 35px;
+		height: auto;
+		margin-top: 65px;
+		margin-left: 45px;
+		display: initial;
+	}
+}
+
+/*Mobile*/
+@media screen and (max-width: 600px) {
+	.Body {
+		margin-top: 70px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.Card {
+		margin: 15px 5px;
+		padding-left: 20px;
+		padding-right: 20px;
+
+	}
+
+	.Card h2 {
+		text-align: center;
+	}
+
+	.Footer {
+		text-align: center;
+		padding-left: 0;
+	}
+
+	.Header h1 {
+		font-size: 1.2rem;
+		padding-left: 60px;
+		margin-top: 24px;
+	}
+
+	.Header > .menu-icon {
+		width: 30px;
+		margin-top: 20px;
+		margin-left: 20px;
+	}
 }

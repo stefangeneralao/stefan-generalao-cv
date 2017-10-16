@@ -21,7 +21,7 @@ const storage = {
     {id: "Arbetslivserfarenhet"},
     {id: "Github-projekt"},
     {id: "Språk"},
-    {id: "Intressen"},
+    // {id: "Intressen"},
   ],
 
   cards: [
@@ -43,7 +43,7 @@ const storage = {
       content: [
         {title: "Om denna webbapplikationen"},
         {divider: "full"},
-				{paragraph: "Applikationen på domänen www.stefangeneralao.fyi är skriven av mig. Till mina verktyg valde jag React och projektet bygger på en boilerplate kallad \"create-react-app\". Förutom JQuery har jag inte använt några andra ramverk eller bibliotek. Servern körs på en maskin med Debian och använder Node i serversidan."},
+				{paragraph: "Applikationen på domänen www.stefangeneralao.fyi är skriven av mig. Till mina verktyg valde jag React och projektet bygger på en boilerplate kallad \"create-react-app\". Förutom JQuery har jag inte använt några andra ramverk eller bibliotek. Servern körs på en maskin med Debian som använder Node."},
 				{paragraph: "Gå gärna in och kolla på min Github. Upptäcker ni buggar, andra problem eller har synpunkter? Skicka in en issue eller pull-request!"}
       ]
     },

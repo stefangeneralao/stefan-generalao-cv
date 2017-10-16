@@ -34,7 +34,6 @@ class Card extends Component {
 					break;
 
 				case 'link':
-					console.log(itemValue);
 					result = (
 						<a href={itemValue} target="blank"><p>{itemValue}</p></a>
 					)
