@@ -1,10 +1,10 @@
 body {
-	background-color: #444;
+  background-color: #444;
 }
 
 h3 {
-	margin-top: 30px;
-	margin-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .Header {
@@ -12,21 +12,21 @@ h3 {
   color: white;
   position: fixed;
   width: 100%;
-  height: 50%;
+  height: 100%;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
   top: 0;
   left: 300px;
   z-index: 1;
 }
 
-.Header > .menu-icon {
-	display: none;
+.Header>.menu-icon {
+  display: none;
 }
 
-.Header > h1 {
+.Header>h1 {
   padding-left: 105px;
   font-size: 2.5em;
-	margin-top: 60px;
+  margin-top: 60px;
 }
 
 .Body {
@@ -34,15 +34,14 @@ h3 {
   position: relative;
   margin-left: 300px;
   margin-top: 160px;
-  margin-bottom: 160px;
-  padding: 5px;
+  padding-top: 5px;
   z-index: 3;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
 }
 
 .Body a {
-	text-decoration: none;
-	color: #0000bb;
+  text-decoration: none;
+  color: #0000bb;
 }
 
 .Card {
@@ -51,14 +50,14 @@ h3 {
   background-color: #fff;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
   border-radius: 2dp;
-	text-align: justify;
+  text-align: justify;
 }
 
 .Card p {
-	font-size: 0.85rem;
-	line-height: 30px;
-	margin-top: 10px;
-	margin-bottom: 30px;
+  font-size: 0.85rem;
+  line-height: 30px;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .Drawer {
@@ -71,55 +70,55 @@ h3 {
   z-index: 4;
   overflow-y: scroll;
   height: 100%;
-	transition: 450ms;
-	transition-timing-function: cubic-bezier(.4,0,.2,1);
+  transition: 450ms;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
 }
 
 ul {
-	padding-left: 0;
-	margin: 0;
+  padding-left: 0;
+  margin: 0;
 }
 
 li {
-	line-height: 60px;
-	font-size: 0.75rem;
-	font-weight: 600;
-	transition: 400ms;
-	white-space: nowrap;
+  line-height: 60px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  transition: 400ms;
+  white-space: nowrap;
 }
 
 .section-list-item {
-	padding-left: 20px;
+  padding-left: 20px;
 }
 
 .section-list-item:hover {
-	padding-left: 25px;
-	background-color: #eee;
+  padding-left: 25px;
+  background-color: #eee;
 }
 
 .section-list-item.active {
-	padding-left: 28px;
-	background-color: #fff;
-	color: #00B8D4;
-	transition: 550ms;
+  padding-left: 28px;
+  background-color: #fff;
+  color: #00B8D4;
+  transition: 550ms;
 }
 
 .subsection-list-item {
-	padding-left: 40px;
-	background-color: #555;
-	color: white;
+  padding-left: 40px;
+  background-color: #555;
+  color: white;
 }
 
 .subsection-list-item:hover {
-	padding-left: 45px;
-	background-color: #4d4d4d;
+  padding-left: 45px;
+  background-color: #4d4d4d;
 }
 
 .subsection-list-item.active {
-	padding-left: 48px;
-	background-color: #555;
-	color: #00E5FF;
-	transition: 550ms;
+  padding-left: 48px;
+  background-color: #555;
+  color: #00E5FF;
+  transition: 550ms;
 }
 
 .Divider {
@@ -128,109 +127,106 @@ li {
 }
 
 .Footer {
-  position: fixed;
   height: 160px;
-  bottom: 0;
-  right: 0;
-  left: 300px;
   background-color: #444;
   padding-top: 30px;
   box-sizing: border-box;
   color: #ddd;
   padding-left: 105px;
-	font-size: 0.85rem;
-	z-index: 2;
+  font-size: 0.85rem;
+  z-index: 1;
 }
 
 .noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Safari */
-	-khtml-user-select: none; /* Konqueror HTML */
-	-moz-user-select: none; /* Firefox */
-	-ms-user-select: none; /* Internet Explorer/Edge */
-	user-select: none; /* Non-prefixed version, currently
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
 	supported by Chrome and Opera */
 }
 
 .progressbar {
-	max-width: 560px;
-	height: 4px;
-	background-color: #ddd;
-	border-radius: 99px;
+  max-width: 560px;
+  height: 4px;
+  background-color: #ddd;
+  border-radius: 99px;
 }
 
-.progressbar > .progress {
-	background-color: #00BCD4;
-	height: 100%;
-	width: 0;
-	border-radius: 99px;
+.progressbar>.progress {
+  background-color: #00BCD4;
+  height: 100%;
+  width: 0;
+  border-radius: 99px;
 }
 
-.avatar-section > .background-avatar {
-	height: 160px;
-	width: 100%;
-	filter: hue-rotate(177deg) invert(1) contrast(95%) brightness(120%) saturate(170%);
-	z-index: 2;
+.avatar-section>.background-avatar {
+  height: 160px;
+  width: 100%;
+  filter: hue-rotate(177deg) invert(1) contrast(95%) brightness(120%) saturate(170%);
+  z-index: 2;
 }
+
 
 /*Tablet*/
+
 @media screen and (max-width: 950px) {
-	.Drawer {
-		width: 0;
-	}
-
-	.Body {
-		margin-left: 0;
-	}
-
-	.Header, .Footer {
-		left: 0;
-	}
-
-	.Header > .menu-icon {
-		filter: invert(1);
-		position: absolute;
-		width: 35px;
-		height: auto;
-		margin-top: 65px;
-		margin-left: 45px;
-		display: initial;
-	}
+  .Drawer {
+    width: 0;
+  }
+  .Body {
+    margin-left: 0;
+  }
+  .Header, .Footer {
+    left: 0;
+  }
+  .Header>.menu-icon {
+    filter: invert(1);
+    position: absolute;
+    width: 35px;
+    height: auto;
+    margin-top: 65px;
+    margin-left: 45px;
+    display: initial;
+  }
 }
 
+
 /*Mobile*/
+
 @media screen and (max-width: 600px) {
-	.Body {
-		margin-top: 70px;
-		padding-left: 0;
-		padding-right: 0;
-	}
-
-	.Card {
-		margin: 15px 5px;
-		padding-left: 20px;
-		padding-right: 20px;
-
-	}
-
-	.Card h2 {
-		text-align: center;
-	}
-
-	.Footer {
-		text-align: center;
-		padding-left: 0;
-	}
-
-	.Header h1 {
-		font-size: 1.2rem;
-		padding-left: 60px;
-		margin-top: 24px;
-	}
-
-	.Header > .menu-icon {
-		width: 30px;
-		margin-top: 20px;
-		margin-left: 20px;
-	}
+  .Body {
+    margin-top: 70px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .Card {
+    margin: 15px 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .Card h2 {
+    text-align: center;
+  }
+  .Footer {
+    text-align: center;
+    padding-left: 0;
+  }
+  .Header h1 {
+    font-size: 1.2rem;
+    padding-left: 60px;
+    margin-top: 24px;
+  }
+  .Header>.menu-icon {
+    width: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
 }

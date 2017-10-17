@@ -3,7 +3,6 @@ import './App.css';
 import Header from './Header.js';
 import Drawer from './Drawer.js';
 import Body from './Body.js';
-import Footer from './Footer.js';
 import getStorage from './storage.js'
 
 window.storage = getStorage();
@@ -65,7 +64,6 @@ class App extends Component {
         <Body
           selectedSection={this.state.selectedSection}
         />
-        <Footer />
       </div>
     );
   }
