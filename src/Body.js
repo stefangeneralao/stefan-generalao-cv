@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
 import Card from './Card.js';
-import Footer from './Footer.js'
 
 class Body extends Component {
   createContent() {
@@ -23,7 +22,6 @@ class Body extends Component {
     return (
       <div className="Body">
         {this.createContent()}
-				<Footer />
       </div>
     );
   }
