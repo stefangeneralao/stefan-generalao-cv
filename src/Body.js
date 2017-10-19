@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import './App.css';
 import Card from './Card.js';
 
 class Body extends Component {

@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import './App.css';
 import menuIcon from './images/ic_menu_black_24px.svg';
 
 class Header extends Component {
