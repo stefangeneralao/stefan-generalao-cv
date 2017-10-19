@@ -137,10 +137,11 @@ class Drawer extends Component {
   }
 
   render() {
-		const width = this.props.open ? "100%" : "";
+		// const width = this.props.open ? "100%" : "";
+		const className = this.props.open ? "Drawer open" : "Drawer"
 
     return (
-      <div className="Drawer" style={{width: width}}>
+      <div className={className}>
         {this.createSectionsList()}
       </div>
     );

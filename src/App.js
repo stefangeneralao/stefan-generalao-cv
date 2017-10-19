@@ -12,8 +12,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-			selectedSection: "",
-			drawerOpen: true
+			selectedSection: "Intro",
+			drawerOpen: false
 		};
     this.selectSection = this.selectSection.bind(this);
 		this.openDrawer = this.openDrawer.bind(this);
@@ -61,9 +61,12 @@ class App extends Component {
         <Header
 					selectedSection={this.state.selectedSection}
 					toggleDrawer={this.toggleDrawer}
+					drawerOpen={this.state.drawerOpen}
 				/>
         <Body
           selectedSection={this.state.selectedSection}
+					drawerOpen={this.state.drawerOpen}
+					closeDrawer={this.closeDrawer}
         />
         <Footer />
       </div>

@@ -75,6 +75,10 @@ h3 {
 	transition-timing-function: cubic-bezier(.4,0,.2,1);
 }
 
+.Drawer.open {
+	width: 300px;
+}
+
 ul {
 	padding-left: 0;
 	margin: 0;
@@ -180,7 +184,17 @@ li {
 	}
 
 	.Body {
+		transition: 100ms;
 		margin-left: 0;
+	}
+
+	.Body.drawer-open {
+		transition: 300ms;
+		filter: brightness(0.5);
+	}
+
+	.Header {
+		transition: 300ms;
 	}
 
 	.Header, .Footer {
@@ -196,10 +210,19 @@ li {
 		margin-left: 45px;
 		display: initial;
 	}
+
+	.Header.drawer-open {
+		transition: 300ms;
+		filter: brightness(0.5) grayscale(100%);
+	}
+
+	.Card p {
+		text-align: left;
+	}
 }
 
 /*Mobile*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px), screen and (max-height: 550px) {
 	.Body {
 		margin-top: 70px;
 		padding-left: 0;
@@ -210,7 +233,6 @@ li {
 		margin: 15px 5px;
 		padding-left: 20px;
 		padding-right: 20px;
-
 	}
 
 	.Card h2 {
@@ -223,9 +245,9 @@ li {
 	}
 
 	.Header h1 {
-		font-size: 1.2rem;
-		padding-left: 60px;
-		margin-top: 24px;
+		font-size: 1.5rem;
+		padding-left: 65px;
+		margin-top: 21px;
 	}
 
 	.Header > .menu-icon {

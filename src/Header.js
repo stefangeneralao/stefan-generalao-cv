@@ -8,9 +8,11 @@ class Header extends Component {
 	}
 
   render() {
+		const className = this.props.drawerOpen ? "Header drawer-open" : "Header"
+
     return (
       <div
-				className="Header"
+				className={className}
 				onClick={() => {this.onClickHandler()}}
 			>
 				<img
