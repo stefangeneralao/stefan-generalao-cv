@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import $ from 'jquery';
+import drawerBanner from './images/drawerBanner.png'
+import iconPlay from './images/ic_play_arrow_black_24px.svg'
+import iconSchool from './images/ic_school_black_24px.svg'
 
 class SubSectionListItem extends Component {
   onClickHandler() {
@@ -48,9 +51,12 @@ class SectionListItem extends Component {
 		}
 
 		return (
-			<li onClick={() => {this.onClickHandler()}} className={className}>
-				{this.props.id}
-			</li>
+			<div>
+				<li onClick={() => {this.onClickHandler()}} className={className}>
+					{/* <img src={iconPlay} alt="section listitem icon" className="section-list-item-icon"/> */}
+					{this.props.id}
+				</li>
+			</div>
 		)
 	}
 }
@@ -67,6 +73,7 @@ class SubSection extends Component{
 		return (
 			<div className="subsection" id={this.props.section.id}>
 			  <li className="subsection-header section-list-item">
+					{/* <img src={iconSchool} alt="section listitem icon" className="section-list-item-icon"/> */}
 			    {this.props.section.id}
 			  </li>
 			  <ul className="subsection-body">
@@ -135,12 +142,24 @@ class Drawer extends Component {
     )
   }
 
+	createDrawerBanner() {
+			// return (
+			// )
+
+			return (
+				<div className="drawer-banner-wrapper">
+					<img className="background-image" src={drawerBanner} alt="banner background"/>
+				</div>
+			)
+	}
+
   render() {
 		// const width = this.props.open ? "100%" : "";
 		const className = this.props.open ? "Drawer open" : "Drawer"
 
     return (
       <div className={className}>
+				{/* {this.createDrawerBanner()} */}
         {this.createSectionsList()}
       </div>
     );

@@ -1,6 +1,9 @@
 const storage = {
   sections: [
-    {id: "Intro"},
+    {
+			id: "Intro",
+			icon: "playArrow"
+		},
     {
 			id: "Studiemeriter",
 			subSections: [

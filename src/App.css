@@ -26,14 +26,15 @@ h3 {
   z-index: 1;
 }
 
-.Header>.menu-icon {
+.Header > .menu-icon {
   display: none;
 }
 
-.Header>h1 {
+.Header > h1 {
   padding-left: 105px;
   font-size: 2.5em;
   margin-top: 60px;
+	white-space: nowrap;
 }
 
 .Body {
@@ -97,6 +98,13 @@ li {
   font-weight: 600;
   transition: 400ms;
   white-space: nowrap;
+}
+
+.section-list-item-icon {
+	width: 18px;
+	position: relative;
+	top: 5px;
+	padding-right: 20px;
 }
 
 .section-list-item {
@@ -188,6 +196,16 @@ li {
   border-radius: 99px;
 }
 
+.drawer-banner-wrapper {
+	height: 160px;
+	background-color: #eee;
+}
+
+.drawer-banner-wrapper > .background-image {
+	height: inherit;
+	width: 100%;
+}
+
 /*Tablet*/
 @media screen and (max-width: 950px) {
   .Drawer {
@@ -199,7 +217,7 @@ li {
   }
   .Body.drawer-open {
     transition: 300ms;
-    filter: brightness(0.5);
+    filter: brightness(0.5) grayscale(100%);
   }
   .Header {
     transition: 300ms;
@@ -245,9 +263,9 @@ li {
     padding-left: 0;
   }
   .Header h1 {
-    font-size: 1.5rem;
-    padding-left: 65px;
-    margin-top: 21px;
+    font-size: 1.2rem;
+    padding-left: 55px;
+    margin-top: 24px;
   }
   .Header>.menu-icon {
     width: 30px;
