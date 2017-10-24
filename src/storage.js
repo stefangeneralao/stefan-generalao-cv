@@ -34,10 +34,11 @@ const storage = {
         {title: "Stefan Generalao"},
         {divider: "full"},
         {subtitle: "Om mig"},
-        {paragraph: "Student på Informationsarkitektprogrammet i Malmö. Jag har redan koll på flera av programmets kurser och kommer därmed ha tid över till en deltidsanställning. För titelns skull vill jag gärna avsluta utbildningen, och jag gillar att ha många bollar i luften."},
-        {paragraph: "Huvudsakligen har jag avslutat högskolekurser inom inbyggda system, och har över 500 timmar i Arduino samt kringliggande hårdvaruprogrammering."},
-				{paragraph: "Jag vill påstå att mina främsta egenskaper är nyfikenhet och jag gillar att lära mig nya saker. Min förra chef beskrev mig som ansvarsfull i soloprojekt men jag föredrar att jobba i team."},
-				{paragraph: "Maskininlärning är ett växande intresse. Min fritid spenderas på studier av olika fält inom maskininlärning, speciellt deep learning. Även webbteknologier som React ligger mig varmt om hjärtat. Nya system är det jag brinner för!"},
+        // {paragraph: "Student på Informationsarkitektprogrammet i Malmö. Jag har redan koll på flera av programmets kurser och kommer därmed ha tid över till en deltidsanställning. För titelns skull vill jag gärna avsluta utbildningen, och jag gillar att ha många bollar i luften."},
+        {paragraph: "Student på Informationsarkitektprogrammet i Malmö. Jag har lätt för kurserna jag läser och anser att ha tillräckligt mycket tid över till deltidsanställning upp till 50%. Jag studerar för att få tillgång till senaste forskningen, nätverkandet och för nöjets skull."},
+        {paragraph: "Huvudsakligen har jag avslutat högskolekurser inom inbyggda system, och har uppskattningsvis kring 500 timmar i Arduino samt kringliggande hårdvaruprogrammering."},
+				{paragraph: "Jag vill påstå att mina främsta egenskaper är nyfikenhet och lättlärd. Min förra chef beskrev mig som ansvarsfull i soloprojekt men jag föredrar att jobba i team."},
+				{paragraph: "Maskininlärning är ett växande intresse. Min fritid spenderas på studier av olika fält inom maskininlärning, speciellt deep learning. Även webbteknologier som React är spännande. Nya system är det jag brinner för!"},
       ]
     },
 
@@ -446,7 +447,7 @@ const storage = {
 				{subtitle: "Plats"},
 				{paragraph: "Halmstad"},
 				{subtitle: "Period"},
-				{paragraph: "xx-xx-xx"}
+				{paragraph: "2015 till 2016"}
 			]
 		},
 
@@ -460,7 +461,7 @@ const storage = {
 				{subtitle: "Plats"},
 				{paragraph: "Malmö, Lund, Trelleborg"},
 				{subtitle: "Period"},
-				{paragraph: "xx-xx-xx"}
+				{paragraph: "2013 till 2014"}
 			]
 		},
 
@@ -474,7 +475,7 @@ const storage = {
 				{subtitle: "Plats"},
 				{paragraph: "Malmö, Ystad, Trelleborg"},
 				{subtitle: "Period"},
-				{paragraph: "xx-xx-xx"}
+				{paragraph: "2012 till 2014"}
 			]
 		},
 
@@ -488,7 +489,21 @@ const storage = {
 				{subtitle: "Plats"},
 				{paragraph: "Mossby"},
 				{subtitle: "Period"},
-				{paragraph: "xx-xx-xx"}
+				{paragraph: "2005 till 2014"}
+			]
+		},
+
+		{
+			section: "Arbetslivserfarenhet",
+			content: [
+				{title: "Dresser Wayne"},
+        {divider: "full"},
+				{subtitle: "Position"},
+				{paragraph: "Praktikant"},
+				{subtitle: "Plats"},
+				{paragraph: "Malmö"},
+				{subtitle: "Period"},
+				{paragraph: "2011"}
 			]
 		},
 
@@ -498,7 +513,8 @@ const storage = {
 				{title: "Stefan Generalao-CV"},
 				{divider: "full"},
 				{subtitle: "Detaljer om projektet"},
-				{paragraph: "Källkoden för webbapplikationen du just nu använder hittar du i denna Github-repository."},
+				{paragraph: "Källkoden för webbapplikationen du just nu använder hittar du i denna Github-repository. Förutom faktumet att jag ville ha en portfolio så fokuserade jag mycket på feedback från människor i detta projektet. Jag lärde mig lyssna, ställa relevanta frågor och se användares reaktioner."},
+				{subtitle: "Länk"},
 				{link: "https://github.com/stefangeneralao/stefan-generalao-cv"}
 			]
 		},
@@ -510,6 +526,7 @@ const storage = {
 				{divider: "full"},
 				{subtitle: "Detaljer om projektet"},
 				{paragraph: "Genetisk algoritm för att hitta den snabbaste vägen från punkt A till punkt B. Algoritmen måste ta hänsyn till accelaration samt att alla hinder alltid ändras. För att uppnå samma mål med en ren matematisk algoritm skulle det kräva mycket processorkraft och avancerade matematiska modeller. I detta problemet är genetiska algoritmer ett lämpligt alternativ."},
+				{subtitle: "Länk"},
 				{link: "https://github.com/stefangeneralao/genetic-path-finder"}
 			]
 		},
@@ -521,6 +538,7 @@ const storage = {
 				{divider: "full"},
 				{subtitle: "Detaljer om projektet"},
 				{paragraph: "Digital Stargazing var del av ett projekt i samarbete med en konstnär."},
+				{subtitle: "Länk"},
 				{link: "https://github.com/stefangeneralao/digital-stargazing"}
 			]
 		},
