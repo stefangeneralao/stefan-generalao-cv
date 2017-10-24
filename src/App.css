@@ -80,7 +80,7 @@ h3 {
 }
 
 .Drawer.open {
-  width: 300px;
+	left: 0;
 }
 
 ul {
@@ -205,7 +205,7 @@ li {
 /*Tablet*/
 @media screen and (max-width: 950px) {
   .Drawer {
-    width: 0;
+    left: -300px;
   }
   .Body {
     transition: 100ms;
