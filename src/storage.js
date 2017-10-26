@@ -36,6 +36,7 @@ const storage = {
         {subtitle: "Om mig"},
         // {paragraph: "Student på Informationsarkitektprogrammet i Malmö. Jag har redan koll på flera av programmets kurser och kommer därmed ha tid över till en deltidsanställning. För titelns skull vill jag gärna avsluta utbildningen, och jag gillar att ha många bollar i luften."},
         {paragraph: "Student på Informationsarkitektprogrammet i Malmö. Jag har lätt för kurserna jag läser och anser att ha tillräckligt mycket tid över till deltidsanställning upp till 50%. Jag studerar för att få tillgång till senaste forskningen, nätverkandet och för nöjets skull."},
+
         {paragraph: "Huvudsakligen har jag avslutat högskolekurser inom inbyggda system, och har uppskattningsvis kring 500 timmar i Arduino samt kringliggande hårdvaruprogrammering."},
 				{paragraph: "Jag vill påstå att mina främsta egenskaper är nyfikenhet och lättlärd. Min förra chef beskrev mig som ansvarsfull i soloprojekt men jag föredrar att jobba i team."},
 				{paragraph: "Maskininlärning är ett växande intresse. Min fritid spenderas på studier av olika fält inom maskininlärning, speciellt deep learning. Även webbteknologier som React är spännande. Nya system är det jag brinner för!"},
@@ -513,7 +514,7 @@ const storage = {
 				{title: "Stefan Generalao-CV"},
 				{divider: "full"},
 				{subtitle: "Detaljer om projektet"},
-				{paragraph: "Källkoden för webbapplikationen du just nu använder hittar du i denna Github-repository. Förutom faktumet att jag ville ha en portfolio så fokuserade jag mycket på feedback från människor i detta projektet. Jag lärde mig lyssna, ställa relevanta frågor och se användares reaktioner."},
+				{paragraph: "Källkoden för webbapplikationen du just nu använder hittar du i denna Github-repository. Förutom faktumet att jag ville ha en portfolio så fokuserade jag mycket på feedback från människor i detta projektet. Jag lärde mig lyssna, ställa relevanta frågor och se användares reaktioner. Projektet har varit en tydlig iterativ process som fortfarande är aktiv."},
 				{subtitle: "Länk"},
 				{link: "https://github.com/stefangeneralao/stefan-generalao-cv"}
 			]
