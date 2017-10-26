@@ -157,6 +157,11 @@ li {
   z-index: 2;
 }
 
+.Footer a {
+	text-decoration: none;
+	color: inherit;
+}
+
 .noselect {
 	/* iOS Safari */
   -webkit-touch-callout: none;

@@ -5,7 +5,7 @@ class Footer extends Component {
     return (
       <div className="Footer">
           <p>Stefan Generalao</p>
-          <p>stefan.generalao@gmail.com</p>
+          <p><a href="mailto:someone@example.com"> stefan.generalao@gmail.com</a></p>
           <p>0768720573</p>
       </div>
     )
