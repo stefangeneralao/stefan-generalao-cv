@@ -194,12 +194,21 @@ li {
 
 .drawer-banner-wrapper {
 	height: 160px;
-	background-color: #eee;
+	background-color: #f44335;
 }
 
 .drawer-banner-wrapper > .background-image {
+	position: absolute;
 	height: inherit;
-	width: 100%;
+	filter: hue-rotate(160deg) saturate(2);
+}
+
+.drawer-banner-wrapper > .profile-image {
+	position: absolute;
+	top: 0;
+	left: 170px;
+	height: inherit;
+	width: auto;
 }
 
 /*Tablet*/

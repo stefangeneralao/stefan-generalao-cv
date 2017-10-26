@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import $ from 'jquery';
-import drawerBanner from './images/drawerBanner.png'
+import drawerBanner from './images/ic_leak_add_black_24px.svg'
+import profileImage from './images/profile-picture-cropped.jpg'
 import iconPlay from './images/ic_play_arrow_black_24px.svg'
 import iconSchool from './images/ic_school_black_24px.svg'
 
@@ -148,13 +149,13 @@ class Drawer extends Component {
 
 			return (
 				<div className="drawer-banner-wrapper">
-					<img className="background-image" src={drawerBanner} alt="banner background"/>
+					{/* <img className="background-image" src={drawerBanner} alt="banner background"/> */}
+					{/* <img className="profile-image" src={profileImage} alt="profile"/> */}
 				</div>
 			)
 	}
 
   render() {
-		// const width = this.props.open ? "100%" : "";
 		const className = this.props.open ? "Drawer open" : "Drawer"
 
     return (
