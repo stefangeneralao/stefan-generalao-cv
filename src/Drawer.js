@@ -144,24 +144,40 @@ class Drawer extends Component {
   }
 
 	createDrawerBanner() {
-			// return (
-			// )
+		return (
+			<div className="drawer-banner-wrapper">
+				{/* <img className="background-image" src={drawerBanner} alt="banner background"/> */}
+				{/* <img className="profile-image" src={profileImage} alt="profile"/> */}
+			</div>
+		)
+	}
 
-			return (
-				<div className="drawer-banner-wrapper">
-					{/* <img className="background-image" src={drawerBanner} alt="banner background"/> */}
-					{/* <img className="profile-image" src={profileImage} alt="profile"/> */}
-				</div>
-			)
+	createExportToPDFButton() {
+		const openPDF = () => {
+			const newWindow = window.open();
+			newWindow.location.href = '/stefan-generalao.pdf';
+		}
+
+		return (
+			<ul>
+				<SectionListItem
+					id={"Export to PDF"}
+					selectSection={() => openPDF()}
+				/>
+			</ul>
+		)
 	}
 
   render() {
-		const className = this.props.open ? "Drawer open" : "Drawer"
+		let className = "Drawer noselect"
+		className += this.props.open ? "open" : ""
 
     return (
       <div className={className}>
 				{/* {this.createDrawerBanner()} */}
         {this.createSectionsList()}
+				<div className="Divider" />
+				{this.createExportToPDFButton()}
       </div>
     );
   }
