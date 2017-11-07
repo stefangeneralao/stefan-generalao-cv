@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import $ from 'jquery';
-import drawerBanner from './images/ic_leak_add_black_24px.svg'
-import profileImage from './images/profile-picture-cropped.jpg'
-import iconPlay from './images/ic_play_arrow_black_24px.svg'
-import iconSchool from './images/ic_school_black_24px.svg'
+// import drawerBanner from './images/ic_leak_add_black_24px.svg'
+// import profileImage from './images/profile-picture-cropped.jpg'
+// import iconPlay from './images/ic_play_arrow_black_24px.svg'
+// import iconSchool from './images/ic_school_black_24px.svg'
 
 class SubSectionListItem extends Component {
   onClickHandler() {
@@ -170,14 +170,14 @@ class Drawer extends Component {
 
   render() {
 		let className = "Drawer noselect"
-		className += this.props.open ? "open" : ""
+		className += this.props.open ? " open" : ""
 
     return (
       <div className={className}>
 				{/* {this.createDrawerBanner()} */}
         {this.createSectionsList()}
-				<div className="Divider" />
-				{this.createExportToPDFButton()}
+				{/* <div className="Divider" />
+				{this.createExportToPDFButton()} */}
       </div>
     );
   }

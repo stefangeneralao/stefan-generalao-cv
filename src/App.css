@@ -75,7 +75,7 @@ h3 {
   z-index: 4;
   overflow-y: scroll;
   height: 100%;
-  transition: 450ms;
+  transition: 500ms;
   transition-timing-function: cubic-bezier(.4, 0, .2, 1);
 }
 
@@ -115,7 +115,7 @@ li {
 .section-list-item.active {
   padding-left: 28px;
   background-color: #fff;
-  color: #00B8D4;
+  color: #00E5FF;
   transition: 550ms;
 }
 
@@ -133,7 +133,7 @@ li {
 .subsection-list-item.active {
   padding-left: 48px;
   background-color: #555;
-  color: #00E5FF;
+  color: #18FFFF;
   transition: 550ms;
 }
 
@@ -219,7 +219,7 @@ li {
 /*Tablet*/
 @media screen and (max-width: 950px) {
   .Drawer {
-    left: -300px;
+    left: -350px;
   }
   .Body {
     transition: 100ms;
