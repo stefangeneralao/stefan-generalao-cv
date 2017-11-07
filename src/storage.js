@@ -35,11 +35,18 @@ const storage = {
         {divider: "full"},
         {subtitle: "Om mig"},
         // {paragraph: "Student på Informationsarkitektprogrammet i Malmö. Jag har redan koll på flera av programmets kurser och kommer därmed ha tid över till en deltidsanställning. För titelns skull vill jag gärna avsluta utbildningen, och jag gillar att ha många bollar i luften."},
-        {paragraph: "Student på Informationsarkitektprogrammet i Malmö. Jag har lätt för kurserna jag läser och anser att ha tillräckligt mycket tid över till deltidsanställning upp till 50%. Jag studerar för att få tillgång till senaste forskningen, nätverkandet och för nöjets skull."},
+        // {paragraph: "Student på Informationsarkitektprogrammet i Malmö. Jag har lätt för kurserna jag läser och anser att ha tillräckligt mycket tid över till deltidsanställning upp till 50%. Jag studerar för att få tillgång till senaste forskningen, nätverkandet och för nöjets skull."},
+				{paragraph: "Student på Informationsarkitektprogrammet i Malmö. Jag är  ambitiös och har hög arbetsmoral, och jag anser mig därför ha tillräckligt mycket tid över för en deltidsanställning upp till 50%. Jag studerar främst för att få tillgång till senaste forskningen och för att ta del av nätverket som högskolan erbjuder."},
 
-        {paragraph: "Huvudsakligen har jag avslutat högskolekurser inom inbyggda system, och har uppskattningsvis kring 500 timmar i Arduino samt kringliggande hårdvaruprogrammering."},
-				{paragraph: "Jag vill påstå att mina främsta egenskaper är nyfikenhet och lättlärd. Min förra chef beskrev mig som ansvarsfull i soloprojekt men jag föredrar att jobba i team."},
-				{paragraph: "Maskininlärning är ett växande intresse. Min fritid spenderas på studier av olika fält inom maskininlärning, speciellt deep learning. Även webbteknologier som React är spännande. Nya system är det jag brinner för!"},
+				{paragraph: "Innan jag flyttade till Malmö avslutade jag högskolekurser inom inbyggda system och har kring 500 timmar i Arduino med hårdvaruprogrammeringen som tillkommer. Jag har även varit aktiv på Halmstad Högskolas entreprenörskapsinkubator där jag har varit involverad i två IT-projekt."},
+
+				{paragraph: "Jag drivs av min nyfikenhet, vilket gör mig snabblärd och involverad, och trots att min förra chef beskrev mig som ansvarsfull i soloprojekt föredrar jag att jobba i team."},
+
+				// {paragraph: "Maskininlärning är ett växande intresse. Min fritid spenderas på studier av olika fält inom maskininlärning, speciellt deep learning. Även webbteknologier som React är spännande. Nya system är det jag brinner för!"},
+				{paragraph: "Maskininlärning är ett växande intresse. På min fritid håller jag mig uppdaterad med senaste studierna i olika fält inom maskininlärning, speciellt deep learning. Jag läser också en distanskurs på Udemy angående samma ämne. Webbteknologier som React (som den här hemsidan är skriven i) är också något som jag tycker är spännande. Nya system är det jag brinner för!"},
+
+				{paragraph: "Navigera dig gärna i menyn till vänster. Hoppas att ni finner mig intressant,"},
+				{paragraph: "Stefan Generalao"}
       ]
     },
 
@@ -48,7 +55,7 @@ const storage = {
       content: [
         {title: "Om denna webbapplikationen"},
         {divider: "full"},
-				{paragraph: "Applikationen på domänen www.stefangeneralao.fyi är skriven av mig. Till mina verktyg valde jag React och projektet bygger på en boilerplate kallad \"create-react-app\". Förutom JQuery har jag inte använt några andra ramverk eller bibliotek. Servern körs på en maskin med Debian som använder Node."},
+				{paragraph: "Applikationen på domänen www.stefangeneralao.fyi är skriven av mig. Till mina verktyg valde jag React och projektet bygger på en boilerplate kallad \"create-react-app\". Förutom jQuery och React har jag inte använt något annat ramverk eller bibliotek. Servern körs på en maskin med Debian som använder Node."},
 				{paragraph: "Gå gärna in och kolla på min Github. Upptäcker ni buggar, andra problem eller har synpunkter? Skicka in en issue eller pull-request!"}
       ]
     },
@@ -61,59 +68,17 @@ const storage = {
       ]
     },
 
-    {
-      section: "Avslutade studiemeriter",
-			content: [
-				{title: "Programmering med Java"},
-        {divider: "full"},
-				{subtitle: "Lärosäte"},
-				{paragraph: "Högskolan i Halmstad"},
-				{subtitle: "Högskolepoäng"},
-				{paragraph: "7.5"},
-				{subtitle: "Godkänt datum"},
-				{paragraph: "141119"}
-			]
-    },
-
 		{
 			section: "Avslutade studiemeriter",
 			content: [
-				{title: "Perspektiv på elektroteknik"},
+				{title: "Programmering med Java, del II"},
         {divider: "full"},
 				{subtitle: "Lärosäte"},
-				{paragraph: "Högskolan i Halmstad"},
+				{paragraph: "Malmö högskola"},
 				{subtitle: "Högskolepoäng"},
 				{paragraph: "7.5"},
 				{subtitle: "Godkänt datum"},
-				{paragraph: "150130"}
-			]
-		},
-
-		{
-			section: "Avslutade studiemeriter",
-			content: [
-				{title: "Digitalteknik"},
-        {divider: "full"},
-				{subtitle: "Lärosäte"},
-				{paragraph: "Högskolan i Halmstad"},
-				{subtitle: "Högskolepoäng"},
-				{paragraph: "7.5"},
-				{subtitle: "Godkänt datum"},
-				{paragraph: "150422"}
-			]
-		},
-
-		{
-			section: "Avslutade studiemeriter",
-			content: [
-				{title: "Datorteknik"},
-        {divider: "full"},
-				{subtitle: "Lärosäte"},
-				{paragraph: "Högskolan i Halmstad"},
-				{subtitle: "Högskolepoäng"},
-				{paragraph: "7.5"},
-				{subtitle: "Godkänt datum"},
-				{paragraph: "150616"}
+				{paragraph: "160611"}
 			]
 		},
 
@@ -134,6 +99,62 @@ const storage = {
 		{
 			section: "Avslutade studiemeriter",
 			content: [
+				{title: "Datorteknik"},
+        {divider: "full"},
+				{subtitle: "Lärosäte"},
+				{paragraph: "Högskolan i Halmstad"},
+				{subtitle: "Högskolepoäng"},
+				{paragraph: "7.5"},
+				{subtitle: "Godkänt datum"},
+				{paragraph: "150616"}
+			]
+		},
+
+		{
+			section: "Avslutade studiemeriter",
+			content: [
+				{title: "Digitalteknik"},
+        {divider: "full"},
+				{subtitle: "Lärosäte"},
+				{paragraph: "Högskolan i Halmstad"},
+				{subtitle: "Högskolepoäng"},
+				{paragraph: "7.5"},
+				{subtitle: "Godkänt datum"},
+				{paragraph: "150422"}
+			]
+		},
+
+		{
+			section: "Avslutade studiemeriter",
+			content: [
+				{title: "Perspektiv på elektroteknik"},
+        {divider: "full"},
+				{subtitle: "Lärosäte"},
+				{paragraph: "Högskolan i Halmstad"},
+				{subtitle: "Högskolepoäng"},
+				{paragraph: "7.5"},
+				{subtitle: "Godkänt datum"},
+				{paragraph: "150130"}
+			]
+		},
+
+    {
+      section: "Avslutade studiemeriter",
+			content: [
+				{title: "Programmering med Java"},
+        {divider: "full"},
+				{subtitle: "Lärosäte"},
+				{paragraph: "Högskolan i Halmstad"},
+				{subtitle: "Högskolepoäng"},
+				{paragraph: "7.5"},
+				{subtitle: "Godkänt datum"},
+				{paragraph: "141119"}
+			]
+    },
+
+		{
+			section: "Avslutade studiemeriter",
+			content: [
 				{title: "Envariabelanalys"},
         {divider: "full"},
 				{subtitle: "Lärosäte"},
@@ -142,20 +163,6 @@ const storage = {
 				{paragraph: "6.0"},
 				{subtitle: "Godkänt datum"},
 				{paragraph: "150117"}
-			]
-		},
-
-		{
-			section: "Avslutade studiemeriter",
-			content: [
-				{title: "Programmering med Java, del II"},
-        {divider: "full"},
-				{subtitle: "Lärosäte"},
-				{paragraph: "Malmö högskola"},
-				{subtitle: "Högskolepoäng"},
-				{paragraph: "7.5"},
-				{subtitle: "Godkänt datum"},
-				{paragraph: "160611"}
 			]
 		},
 
@@ -204,24 +211,13 @@ const storage = {
 		{
 			section: "Maskininlärning",
 			content: [
-				{title: "Synapse.js"},
+				{title: "Keras"},
         {divider: "full"},
 				{subtitle: "Kunnighet"},
-				{progressbar: 20},
+				{progressbar: 40},
 				{subtitle: "Detaljer"},
-				{paragraph: "JavaScript-bibliotek för att bygga, träna och aktivera neuronnät. I biblioteket testade jag att göra en s.k. deep neural network för att tolka handskrivna siffror med MNIST-databasen."}
-			]
-		},
-
-		{
-			section: "Maskininlärning",
-			content: [
-				{title: "Neataptic.js"},
-        {divider: "full"},
-				{subtitle: "Kunnighet"},
-				{progressbar: 10},
-				{subtitle: "Detaljer"},
-				{paragraph: "JavaScript-bibliotek för att utveckla NEAT-neuronnät."}
+				{paragraph: "Jag kan skapa deep neural networks och med fiktiva kunddatabaser har jag bland annat kunnat förutspå önskade egenskaper, till exempel om en bestämd kund kommer att säga upp sitt avtal inom ett halvår."},
+				{paragraph: "Med convolutional neural network (CNN) har jag konstruerat klassifierare som ser skillnad på hundar och katter. Arkitekturen kan dock appliceras på många användningsområden, bland annat cancerklassifiering."}
 			]
 		},
 
@@ -231,45 +227,21 @@ const storage = {
 				{title: "TensorFlow"},
         {divider: "full"},
 				{subtitle: "Kunnighet"},
-				{progressbar: 10},
-				{subtitle: "Detaljer"},
-				{paragraph: "I Googles open source-projekt TensorFlow har jag, i Python, gjort neuronnätverkets motsvarighet till Hello World."}
-			]
-		},
-
-		{
-			section: "Webbteknologier",
-			content: [
-				{title: "React.js"},
-        {divider: "full"},
-				{subtitle: "Kunnighet"},
-				{progressbar: 50},
-				{subtitle: "Detaljer"},
-				{paragraph: "På grund av mitt intresse i React.js växer mina kunskaper snabbt! Idag är jag bekväm i React-komponentens livscykel, state, props och Redux. Har även kopplat React-applikationer med Firebase."}
-			]
-		},
-
-		{
-			section: "Webbteknologier",
-			content: [
-				{title: "Webpack"},
-        {divider: "full"},
-				{subtitle: "Kunnighet"},
 				{progressbar: 20},
 				{subtitle: "Detaljer"},
-				{paragraph: "Tillräckliga kunskaper för att konfigurera www.stefangeneralao.fyi samt få igång hot-reload."}
+				{paragraph: "TensorFlow är back-end till Keras. För att använda Keras bör viss baskunskap i TensorFlow innehas."}
 			]
 		},
 
 		{
-			section: "Webbteknologier",
+			section: "Maskininlärning",
 			content: [
-				{title: "Node.js"},
+				{title: "Synapse.js"},
         {divider: "full"},
 				{subtitle: "Kunnighet"},
 				{progressbar: 10},
 				{subtitle: "Detaljer"},
-				{paragraph: "Använder npm för pakethantering i många av mina projekt. Har även lyckats att konfigurera servrar i Node.js."}
+				{paragraph: "JavaScript-bibliotek för att bygga, träna och aktivera neuronnät. I Synapse testade jag att lösa XOR-problemet, även kallat neuronnätverkets motsvarighet till Hello World."}
 			]
 		},
 
@@ -279,7 +251,7 @@ const storage = {
 				{title: "HTML, CSS, Vanilla JavaScript"},
         {divider: "full"},
 				{subtitle: "Kunnighet"},
-				{progressbar: 60},
+				{progressbar: 70},
 				{subtitle: "Detaljer"},
 				{paragraph: "Grundläggande kunskaper för att bygga snygga hemsidor. Hanterar CSS-grids med nöje, responsivitet likaså."}
 			]
@@ -291,9 +263,57 @@ const storage = {
 				{title: "P5.js"},
         {divider: "full"},
 				{subtitle: "Kunnighet"},
-				{progressbar: 100},
+				{progressbar: 60},
 				{subtitle: "Detaljer"},
 				{paragraph: "P5 är ett JavaScript-bibliotek för att snabbt rendera 2D-grafik. I en genetisk algoritm som jag utvecklade valde jag P5 för att visualisera projektet, se \"genetic-path-finder\" under Github-projekt."}
+			]
+		},
+
+		{
+			section: "Webbteknologier",
+			content: [
+				{title: "React.js"},
+        {divider: "full"},
+				{subtitle: "Kunnighet"},
+				{progressbar: 50},
+				{subtitle: "Detaljer"},
+				{paragraph: "Mitt intresse i React gör att mina kunskaper växer snabbt! Idag är jag bekväm i React-komponentens livscykel, state, props. Har även kopplat React-applikationer med Firebase."}
+			]
+		},
+
+		{
+			section: "Webbteknologier",
+			content: [
+				{title: "Redux"},
+        {divider: "full"},
+				{subtitle: "Kunnighet"},
+				{progressbar: 30},
+				{subtitle: "Detaljer"},
+				{paragraph: "Har testat att implementera Redux i React-applikationer. Redux är ett intressant koncept som jag ser stor nytta av i stora projekt."}
+			]
+		},
+
+		{
+			section: "Webbteknologier",
+			content: [
+				{title: "Firebase"},
+        {divider: "full"},
+				{subtitle: "Kunnighet"},
+				{progressbar: 20},
+				{subtitle: "Detaljer"},
+				{paragraph: "Har testat att implementera Firebase i små projekt som kräver databashanterig i realtid."}
+			]
+		},
+
+		{
+			section: "Webbteknologier",
+			content: [
+				{title: "Node"},
+        {divider: "full"},
+				{subtitle: "Kunnighet"},
+				{progressbar: 10},
+				{subtitle: "Detaljer"},
+				{paragraph: "Använder npm för pakethantering i många av mina projekt. Har även lyckats att konfigurera servrar i Node."}
 			]
 		},
 
@@ -324,24 +344,24 @@ const storage = {
 		{
 			section: "Hårdvara",
 			content: [
-				{title: "C/C++ (Inbyggda system)"},
-        {divider: "full"},
-				{subtitle: "Kunnighet"},
-				{progressbar: 30},
-				{subtitle: "Detaljer"},
-				{paragraph: "I kursen Datorteknik (7.5 hp) studerade vi processorn ARM Cortex-M3. Att tolka tillhörande datablad på cirka 1500 sidor var också ett krav för att klara av kursen."}
-			]
-		},
-
-		{
-			section: "Hårdvara",
-			content: [
 				{title: "Raspberry PI"},
         {divider: "full"},
 				{subtitle: "Kunnighet"},
 				{progressbar: 70},
 				{subtitle: "Detaljer"},
 				{paragraph: "Headless installation och navigering via SSH med Linuxbaserade operativsystem är inga problem. Kan manipulera I/O-portarna, konfigurera servrar, styra 3D-skrivare och massa annat."}
+			]
+		},
+
+		{
+			section: "Hårdvara",
+			content: [
+				{title: "C/C++ (Inbyggda system)"},
+        {divider: "full"},
+				{subtitle: "Kunnighet"},
+				{progressbar: 30},
+				{subtitle: "Detaljer"},
+				{paragraph: "I kursen Datorteknik (7.5 hp) studerade vi processorn ARM Cortex-M3. Att tolka tillhörande datablad på cirka 1500 sidor var också ett krav för att klara av kursen."}
 			]
 		},
 
@@ -384,24 +404,12 @@ const storage = {
 		{
 			section: "Övrigt",
 			content: [
-				{title: "Java"},
+				{title: "Adobe Photoshop"},
         {divider: "full"},
 				{subtitle: "Kunnighet"},
-				{progressbar: 50},
+				{progressbar: 70},
 				{subtitle: "Detaljer"},
-				{paragraph: "Totalt 22.5 högskolepoäng i kurser med programmering i Java. I kurserna byggde jag datastrukturer, algoritmer och GUI."}
-			]
-		},
-
-		{
-			section: "Övrigt",
-			content: [
-				{title: "Python"},
-        {divider: "full"},
-				{subtitle: "Kunnighet"},
-				{progressbar: 20},
-				{subtitle: "Detaljer"},
-				{paragraph: "Med hjälp av biblioteket TensorFlow byggde jag ett neuronnätverk i Python."}
+				{paragraph: "Fotografering med tillhörande efterbehandling i Photoshop är ett intresse som ligger nära hjärtat."}
 			]
 		},
 
@@ -413,19 +421,31 @@ const storage = {
 				{subtitle: "Kunnighet"},
 				{progressbar: 60},
 				{subtitle: "Detaljer"},
-				{paragraph: "Denna hemsidan (www.stefangeneralao.fyi) körs på en maskin med Debian, systemet är konfigurerat av mig. I terminalen är jag bekväm, jag har bra översikt över UNIX-system och jag har grundläggande kunskaper om BASH."}
+				{paragraph: "Denna hemsidan (www.stefangeneralao.fyi) körs på en maskin med Debian, systemet är konfigurerat av mig. Jag navigerar bekvämt i terminalen och har bra översikt över UNIX-system."}
 			]
 		},
 
 		{
 			section: "Övrigt",
 			content: [
-				{title: "Adobe Photoshop"},
+				{title: "Java"},
         {divider: "full"},
 				{subtitle: "Kunnighet"},
-				{progressbar: 70},
+				{progressbar: 50},
 				{subtitle: "Detaljer"},
-				{paragraph: "Fotografering med tillhörande efterbehandling i Photoshop är ett intresse som ligger nära hjärtat."}
+				{paragraph: "Totalt 22.5 högskolepoäng i kurser med programmering i Java. I kurserna byggde jag algoritmer, datastrukturer och GUI."}
+			]
+		},
+
+		{
+			section: "Övrigt",
+			content: [
+				{title: "Python"},
+        {divider: "full"},
+				{subtitle: "Kunnighet"},
+				{progressbar: 20},
+				{subtitle: "Detaljer"},
+				{paragraph: "Läser för tillfället en högskolekurs i Python."}
 			]
 		},
 
