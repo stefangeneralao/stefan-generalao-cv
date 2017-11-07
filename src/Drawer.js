@@ -161,7 +161,7 @@ class Drawer extends Component {
 		return (
 			<ul>
 				<SectionListItem
-					id={"Export to PDF"}
+					id={"Öppna PDF-version"}
 					selectSection={() => openPDF()}
 				/>
 			</ul>
