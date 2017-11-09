@@ -16,13 +16,13 @@ const storage = {
 			subSections: [
 				{id: "Maskininlärning"},
 				{id: "Webbteknologier"},
-				{id: "Hårdvara"},
+				{id: "IoT"},
 				{id: "3D-printing och design"},
 				{id: "Övrigt"},
 			]
 		},
+		{id: "Projekt"},
     {id: "Arbetslivserfarenhet"},
-    {id: "Github-projekt"},
     {id: "Språk"},
     // {id: "Intressen"},
   ],
@@ -43,7 +43,7 @@ const storage = {
 				{paragraph: "Jag drivs av min nyfikenhet, vilket gör mig snabblärd och involverad, och trots att min förra chef beskrev mig som ansvarsfull i soloprojekt föredrar jag att jobba i team."},
 
 				// {paragraph: "Maskininlärning är ett växande intresse. Min fritid spenderas på studier av olika fält inom maskininlärning, speciellt deep learning. Även webbteknologier som React är spännande. Nya system är det jag brinner för!"},
-				{paragraph: "Maskininlärning är ett växande intresse. På min fritid håller jag mig uppdaterad med senaste studierna i olika fält inom maskininlärning, speciellt deep learning. Jag läser också en distanskurs på Udemy angående samma ämne. Webbteknologier som React (som den här hemsidan är skriven i) är också något som jag tycker är spännande. Nya system är det jag brinner för!"},
+				{paragraph: "Maskininlärning är ett stort intresse. På min fritid håller jag mig uppdaterad med senaste studierna i olika fält inom maskininlärning, speciellt deep learning. Jag läser också en distanskurs på Udemy i samma ämne. Webbteknologier som React (som den här hemsidan är skriven i) är också något som jag tycker är spännande. Nya system är det jag brinner för!"},
 
 				{paragraph: "Navigera dig gärna i menyn till vänster. Hoppas att ni finner mig intressant,"},
 				{paragraph: "Stefan Generalao"}
@@ -138,20 +138,6 @@ const storage = {
 			]
 		},
 
-    {
-      section: "Avslutade studiemeriter",
-			content: [
-				{title: "Programmering med Java"},
-        {divider: "full"},
-				{subtitle: "Lärosäte"},
-				{paragraph: "Högskolan i Halmstad"},
-				{subtitle: "Högskolepoäng"},
-				{paragraph: "7.5"},
-				{subtitle: "Godkänt datum"},
-				{paragraph: "141119"}
-			]
-    },
-
 		{
 			section: "Avslutade studiemeriter",
 			content: [
@@ -165,6 +151,20 @@ const storage = {
 				{paragraph: "150117"}
 			]
 		},
+
+    {
+      section: "Avslutade studiemeriter",
+			content: [
+				{title: "Programmering med Java"},
+        {divider: "full"},
+				{subtitle: "Lärosäte"},
+				{paragraph: "Högskolan i Halmstad"},
+				{subtitle: "Högskolepoäng"},
+				{paragraph: "7.5"},
+				{subtitle: "Godkänt datum"},
+				{paragraph: "141119"}
+			]
+    },
 
     {
       section: "Pågående studiemeriter",
@@ -216,8 +216,8 @@ const storage = {
 				{subtitle: "Kunnighet"},
 				{progressbar: 40},
 				{subtitle: "Detaljer"},
-				{paragraph: "Jag kan skapa deep neural networks och med fiktiva kunddatabaser har jag bland annat kunnat förutspå önskade egenskaper, till exempel om en bestämd kund kommer att säga upp sitt avtal inom ett halvår."},
-				{paragraph: "Med convolutional neural network (CNN) har jag konstruerat klassifierare som ser skillnad på hundar och katter. Arkitekturen kan dock appliceras på många användningsområden, bland annat cancerklassifiering."}
+				{paragraph: "Jag kan skapa deep neural networks. Med fiktiva kunddatabaser har jag bland annat kunnat förutspå önskade egenskaper, till exempel sannolikheten att en bestämd kund kommer att säga upp sitt avtal inom ett halvår."},
+				{paragraph: "Med convolutional neural network har jag konstruerat klassifierare som ser skillnad på hundar och katter. Arkitekturen kan appliceras på många användningsområden, bland annat cancerklassifiering."}
 			]
 		},
 
@@ -241,7 +241,7 @@ const storage = {
 				{subtitle: "Kunnighet"},
 				{progressbar: 10},
 				{subtitle: "Detaljer"},
-				{paragraph: "JavaScript-bibliotek för att bygga, träna och aktivera neuronnät. I Synapse testade jag att lösa XOR-problemet, även kallat neuronnätverkets motsvarighet till Hello World."}
+				{paragraph: "JavaScript-bibliotek för att bygga, träna och aktivera neurala nätverk. I Synapse testade jag att lösa det så kallade XOR-problemet som ofta anses vara neurala nätverkets motsvarighet till Hello World."}
 			]
 		},
 
@@ -318,7 +318,7 @@ const storage = {
 		},
 
 		{
-			section: "Hårdvara",
+			section: "IoT",
 			content: [
 				{title: "Arduino - Mjukvara och hårdvara"},
         {divider: "full"},
@@ -330,19 +330,20 @@ const storage = {
 		},
 
 		{
-			section: "Hårdvara",
+			section: "IoT",
 			content: [
-				{title: "Elektroteknik"},
-        {divider: "full"},
+				{title: "Hårdvaruhacking, felsökning, buggtestning"},
+				{divider: "full"},
 				{subtitle: "Kunnighet"},
-				{progressbar: 90},
+				{progressbar: 80},
 				{subtitle: "Detaljer"},
-				{paragraph: "Bra grundläggande kunskap om flertalet passiva och aktiva komponenter. Har även skickligheten att löda SMD-komponenter."}
+				{paragraph: "Min nyfikenhet är för stark för att låta chassit vara stängt."},
+				{paragraph: "I ett projekt (se WhatRemote under sektionen Projekt) byggde jag mitt egna smarta hem. Bland annat hackades Apple Remote för att styra Luxorparts fjärrströmbrytare. Jag lyckades även översätta BlueToothsignaler till IR för att styra min TV med mobilen. Projektet krävde grundlig kunskap för elektronik och kunskap att tillverka prototyper."},
 			]
 		},
 
 		{
-			section: "Hårdvara",
+			section: "IoT",
 			content: [
 				{title: "Raspberry PI"},
         {divider: "full"},
@@ -354,7 +355,19 @@ const storage = {
 		},
 
 		{
-			section: "Hårdvara",
+			section: "IoT",
+			content: [
+				{title: "Elektroteknik"},
+        {divider: "full"},
+				{subtitle: "Kunnighet"},
+				{progressbar: 60},
+				{subtitle: "Detaljer"},
+				{paragraph: "Bra grundläggande kunskap om flertalet passiva och aktiva komponenter. Har även skickligheten att löda SMD-komponenter."}
+			]
+		},
+
+		{
+			section: "IoT",
 			content: [
 				{title: "C/C++ (Inbyggda system)"},
         {divider: "full"},
@@ -529,7 +542,19 @@ const storage = {
 		},
 
 		{
-			section: "Github-projekt",
+			section: "Projekt",
+			content: [
+				{title: "WhatRemote"},
+				{divider: "full"},
+				{subtitle: "Detaljer om projektet"},
+				{paragraph: "Mitt egna smarta hem kallar jag WhatRemote. Med systemet styr jag TV, förstärkare och vägguttag med en applikation i Android. Alla fjärrkontroller i vardagsrummet har blivit ersatta av WhatRemote."},
+				{paragraph: "Microprocessorn är Atmel ATMega328 och koden är skriven av mig i C++."},
+				{paragraph: "Demovisning erbjuds för alla gäster. Välkommen!"}
+			]
+		},
+
+		{
+			section: "Projekt",
 			content: [
 				{title: "Stefan Generalao-CV"},
 				{divider: "full"},
@@ -541,7 +566,7 @@ const storage = {
 		},
 
 		{
-			section: "Github-projekt",
+			section: "Projekt",
 			content: [
 				{title: "Genetic Path Finder"},
 				{divider: "full"},
@@ -553,7 +578,7 @@ const storage = {
 		},
 
 		{
-			section: "Github-projekt",
+			section: "Projekt",
 			content: [
 				{title: "Digital Stargazing"},
 				{divider: "full"},
