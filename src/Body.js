@@ -9,7 +9,7 @@ class Body extends Component {
   createContent() {
     const cards = [];
     window.storage.cards.forEach((card, index) => {
-      if(card.section === this.props.selectedSection) {
+      if(card.section === this.props.getSection()) {
         cards.push(<Card content={card.content} key={index}/>);
       }
     });
@@ -18,11 +18,11 @@ class Body extends Component {
       <div>
         {cards}
       </div>
-    )
+    );
   }
 
   render() {
-		const className = this.props.drawerOpen ? "Body drawer-open" : "Body"
+		const className = this.props.drawerOpen ? "Body drawer-open" : "Body";
 
     return (
       <div className={className} onClick={() => {this.onClickHandler()}}>
