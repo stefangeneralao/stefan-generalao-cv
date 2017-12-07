@@ -198,8 +198,6 @@ li {
 }
 
 .drawer-banner-wrapper {
-	height: 160px;
-	background-color: #f44335;
 }
 
 .drawer-banner-wrapper > .background-image {
@@ -209,11 +207,12 @@ li {
 }
 
 .drawer-banner-wrapper > .profile-image {
-	position: absolute;
-	top: 0;
-	left: 170px;
-	height: inherit;
-	width: auto;
+	height: auto;
+	width: 100%;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 /*Tablet*/

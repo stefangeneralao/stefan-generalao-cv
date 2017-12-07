@@ -36,9 +36,9 @@ const storage = {
         {subtitle: "Om mig"},
         // {paragraph: "Student på Informationsarkitektprogrammet i Malmö. Jag har redan koll på flera av programmets kurser och kommer därmed ha tid över till en deltidsanställning. För titelns skull vill jag gärna avsluta utbildningen, och jag gillar att ha många bollar i luften."},
         // {paragraph: "Student på Informationsarkitektprogrammet i Malmö. Jag har lätt för kurserna jag läser och anser att ha tillräckligt mycket tid över till deltidsanställning upp till 50%. Jag studerar för att få tillgång till senaste forskningen, nätverkandet och för nöjets skull."},
-				{paragraph: "Student på Informationsarkitektprogrammet i Malmö. Jag är  ambitiös och har hög arbetsmoral, och jag anser mig därför ha tillräckligt mycket tid över för en deltidsanställning upp till 50%. Jag studerar främst för att få tillgång till senaste forskningen och för att ta del av nätverket som högskolan erbjuder."},
+				{paragraph: "Student på Informationsarkitektprogrammet i Malmö. Jag är  ambitiös och har hög arbetsmoral, och jag anser mig ha tillräckligt mycket tid över för en deltidsanställning upp till 50%. Jag studerar främst för att få tillgång till senaste forskningen och för att ta del av nätverket som högskolan erbjuder."},
 
-				{paragraph: "Innan jag flyttade till Malmö avslutade jag högskolekurser inom inbyggda system och har kring 500 timmar i Arduino med hårdvaruprogrammeringen som tillkommer. Jag har även varit aktiv på Halmstad Högskolas entreprenörskapsinkubator där jag har varit involverad i två IT-projekt."},
+				{paragraph: "Innan jag flyttade till Malmö avslutade jag högskolekurser inom inbyggda system och har kring 500 timmar i Arduino samt hårdvaran som tillkommer. Jag har även varit aktiv på Halmstad Högskolas entreprenörskapsinkubator där jag har varit involverad i två IT-projekt."},
 
 				{paragraph: "Jag drivs av min nyfikenhet, vilket gör mig snabblärd och involverad, och trots att min förra chef beskrev mig som ansvarsfull i soloprojekt föredrar jag att jobba i team."},
 
@@ -55,8 +55,9 @@ const storage = {
       content: [
         {title: "Om denna webbapplikationen"},
         {divider: "full"},
-				{paragraph: "Applikationen på domänen www.stefangeneralao.fyi är skriven av mig. Till mina verktyg valde jag React och projektet bygger på en boilerplate kallad \"create-react-app\". Förutom jQuery och React har jag inte använt något annat ramverk eller bibliotek. Servern körs på en maskin med Debian som använder Node."},
-				{paragraph: "Gå gärna in och kolla på min Github. Upptäcker ni buggar, andra problem eller har synpunkter? Skicka in en issue eller pull-request!"}
+				{paragraph: "Applikationen på domänen www.stefangeneralao.fyi är skriven av mig. Till mina verktyg valde jag React och projektet bygger på en boilerplate kallad \"create-react-app\". Servern körs på en maskin med Debian som använder Node."},
+				{paragraph: "Projektet finns på min Github. Upptäcker ni buggar, andra problem eller har synpunkter? Skicka in en issue eller pull-request!"},
+        {link: "https://github.com/stefangeneralao/stefan-generalao-cv"}
       ]
     },
 
@@ -205,6 +206,15 @@ const storage = {
         {divider: "full"},
 				{subtitle: "Lärosäte"},
 				{paragraph: "Udemy"}
+			]
+		},
+
+		{
+			section: "Maskininlärning",
+			content: [
+				{title: "Sammanfattning"},
+        {divider: "full"},
+				{paragraph: "Deep learning förutspås att stå för den fjärde industriella revolutionen och har redan bidragit till stora delar av samhället. Mina favoritarkitekturer att implementera är ANN, CNN och RNN. Jag har även kunskap om avancerade arkitekturer som Boltzmann Machine, Autoencoders och Self Organizing Maps."},
 			]
 		},
 

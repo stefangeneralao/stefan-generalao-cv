@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import $ from 'jquery';
 // import drawerBanner from './images/ic_leak_add_black_24px.svg'
-// import profileImage from './images/profile-picture-cropped.jpg'
+import profileImage from './images/profile-picture-2-cropped.jpg'
 // import iconPlay from './images/ic_play_arrow_black_24px.svg'
 // import iconSchool from './images/ic_school_black_24px.svg'
 
@@ -65,9 +65,11 @@ class SectionListItem extends Component {
 class SubSection extends Component{
 	componentDidMount() {
 		$(".subsection-body").hide();
-    $("#" + this.props.section.id).children(".subsection-header").click(function() {
-			$(this).siblings(".subsection-body").slideToggle(250);
-    });
+    $("#" + this.props.section.id)
+      .children(".subsection-header")
+        .click(function() {
+          $(this).siblings(".subsection-body").slideToggle(250);
+        });
 	}
 
 	render() {
@@ -146,8 +148,7 @@ class Drawer extends Component {
 	createDrawerBanner() {
 		return (
 			<div className="drawer-banner-wrapper">
-				{/* <img className="background-image" src={drawerBanner} alt="banner background"/> */}
-				{/* <img className="profile-image" src={profileImage} alt="profile"/> */}
+				<img className="profile-image" src={profileImage} alt="profile"/>
 			</div>
 		)
 	}
@@ -174,7 +175,7 @@ class Drawer extends Component {
 
     return (
       <div className={className}>
-				{/* {this.createDrawerBanner()} */}
+				{this.createDrawerBanner()}
         {this.createSectionsList()}
 				{/* <div className="Divider" />
 				{this.createExportToPDFButton()} */}
