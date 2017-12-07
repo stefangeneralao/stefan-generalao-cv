@@ -1,139 +1,56 @@
 import React, {Component} from 'react';
 import $ from 'jquery';
-// import drawerBanner from './images/ic_leak_add_black_24px.svg'
 import profileImage from './images/profile-picture-2-cropped.jpg'
-// import iconPlay from './images/ic_play_arrow_black_24px.svg'
-// import iconSchool from './images/ic_school_black_24px.svg'
 
-class SubSectionListItem extends Component {
-  onClickHandler() {
-    this.props.selectSection(this.props.id)
-  }
-
-	isSelected() {
-		if(this.props.selectedSection === this.props.id) {
-			return true;
-		} else {
-			return false;
-		}
-	}
-
-	render() {
-		let className = "subsection-list-item";
-		if(this.isSelected()) {
-			className += " active";
-		}
-
-		return (
-			<li onClick={() => {this.onClickHandler()}} className={className}>
-				{this.props.id}
-			</li>
-		)
-	}
-}
-
-class SectionListItem extends Component {
-  onClickHandler() {
-    this.props.selectSection(this.props.id)
-  }
-
-	isSelected() {
-		if(this.props.selectedSection === this.props.id) {
-			return true;
-		} else {
-			return false;
-		}
-	}
-
-	render() {
-		let className = "section-list-item";
-		if(this.isSelected()) {
-			className += " active";
-		}
-
-		return (
-			<div>
-				<li onClick={() => {this.onClickHandler()}} className={className}>
-					{/* <img src={iconPlay} alt="section listitem icon" className="section-list-item-icon"/> */}
-					{this.props.id}
-				</li>
-			</div>
-		)
-	}
-}
-
-class SubSection extends Component{
-	componentDidMount() {
-		$(".subsection-body").hide();
-    $("#" + this.props.section.id)
-      .children(".subsection-header")
-        .click(function() {
-          $(this).siblings(".subsection-body").slideToggle(250);
-        });
-	}
-
-	render() {
-		return (
-			<div className="subsection" id={this.props.section.id}>
-			  <li className="subsection-header section-list-item">
-					{/* <img src={iconSchool} alt="section listitem icon" className="section-list-item-icon"/> */}
-			    {this.props.section.id}
-			  </li>
-			  <ul className="subsection-body">
-			    {this.props.subSectionsList}
-			  </ul>
-			</div>
-		)
-	}
-}
-
+// Main wrapper component for the whole drawer.
 class Drawer extends Component {
+	// Function handling clicks in the drawer.
   onClickHandler(sectionID) {
-    this.props.selectSection(sectionID)
+    this.props.setSection(sectionID);
   }
 
+	// Returning the list of sections.
   createSectionsList() {
+		// Fetching the list of sections from storage.
     const sectionsList = window.storage.sections;
 
     // Iterate through every section.
     const result = sectionsList.map((section) => {
-
-      // If section has subSections,
-      // Then create a collapsible listItem.
+			// If section has subSections, then return SubSectionHeader.
+			// Else return SectionListItem.
       if (section.subSections) {
 
-        // Create the list of subSections.
+        // Create the body of the subSection.
         const subSectionsList = section.subSections.map((subSection) => {
           return (
-						<SubSectionListItem
+						<SectionListItem
+							isSubSection={true}
 							key={subSection.id}
-							selectSection={this.props.selectSection}
-							selectedSection={this.props.selectedSection}
+							setSection={this.props.setSection}
+							getSection={this.props.getSection}
 							id={subSection.id}
 						/>
-          )
+          );
         })
 
-        // Return collapsible SubSection-component.
+        // Return SubSectionHeader with header and body.
         return (
-					<SubSection
+					<SubSectionHeader
 						key={section.id}
 						section={section}
 						subSectionsList={subSectionsList}
 					/>
-        )
-
-        // If section has no subSections,
-        // Then create listItem.
+        );
       } else {
+				// Return SectionListItem.
         return (
 					<SectionListItem
 						key={section.id}
-						selectSection={this.props.selectSection}
-						selectedSection={this.props.selectedSection}
+						setSection={this.props.setSection}
+						getSection={this.props.getSection}
 						id={section.id}
 					/>
-        )
+        );
       }
     });
 
@@ -142,17 +59,19 @@ class Drawer extends Component {
       <ul className="noselect">
         {result}
       </ul>
-    )
+    );
   }
 
+	// Create and return the top banner of the drawer.
 	createDrawerBanner() {
 		return (
 			<div className="drawer-banner-wrapper">
 				<img className="profile-image" src={profileImage} alt="profile"/>
 			</div>
-		)
+		);
 	}
 
+	// Create and return a button linked to the pdf-version of this page.
 	createExportToPDFButton() {
 		const openPDF = () => {
 			const newWindow = window.open();
@@ -163,25 +82,79 @@ class Drawer extends Component {
 			<ul>
 				<SectionListItem
 					id={"Öppna PDF-version"}
-					selectSection={() => openPDF()}
+					setSection={() => openPDF()}
 				/>
 			</ul>
-		)
+		);
 	}
 
   render() {
-		let className = "Drawer noselect"
-		className += this.props.open ? " open" : ""
+		let className = "Drawer noselect";
+		className += this.props.open ? " open" : "";
 
     return (
       <div className={className}>
 				{this.createDrawerBanner()}
         {this.createSectionsList()}
-				{/* <div className="Divider" />
-				{this.createExportToPDFButton()} */}
       </div>
     );
   }
+}
+
+// Component for listItems in the drawer.
+// Pass the attribute isSubSection={true} is this component
+// should represent a subSection.
+class SectionListItem extends Component {
+	// Calls the function setSection passed from parent component.
+  onClickHandler() {
+    this.props.setSection(this.props.id);
+  }
+
+	isSelected() {
+		return this.props.getSection() === this.props.id;
+	}
+
+	render() {
+		let className = this.props.isSubSection ? "subsection-list-item" : "section-list-item";
+		if(this.isSelected()) {
+			className += " active";
+		}
+
+		return (
+			<div>
+				<li onClick={() => {this.onClickHandler()}} className={className}>
+					{this.props.id}
+				</li>
+			</div>
+		);
+	}
+}
+
+// Use this component as a wrapper and header for components with subSections.
+// Pass the attribute subSectionsList as a list of SectionListItems.
+class SubSectionHeader extends Component{
+	componentDidMount() {
+		// Animation for the slide-effect when opening a subSection.
+		$(".subsection-body").hide();
+    $("#" + this.props.section.id).children(".subsection-header").click(
+			function() {
+				$(this).siblings(".subsection-body").slideToggle(250);
+			}
+		);
+	}
+
+	render() {
+		return (
+			<div className="subsection" id={this.props.section.id}>
+			  <li className="subsection-header section-list-item">
+			    {this.props.section.id}
+			  </li>
+			  <ul className="subsection-body">
+			    {this.props.subSectionsList}
+			  </ul>
+			</div>
+		);
+	}
 }
 
 export default Drawer;
