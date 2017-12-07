@@ -23,19 +23,22 @@ class App extends Component {
 		this.setSection = this.setSection.bind(this);
 		this.getSection = this.getSection.bind(this);
 		this.handleScroll = this.handleScroll.bind(this);
+		this.getDrawerState = this.getDrawerState.bind(this);
   }
 
 	componentDidMount() {
 		window.addEventListener('scroll', this.handleScroll);
 	}
 
+	getDrawerState() {
+		return this.state.drawerOpen;
+	}
+
 	handleScroll(event) {
 		if(window.scrollY > 90) {
 			this.setState({smallHeader: true});
-			console.log(this.state.smallHeader);
 		} else {
 			this.setState({smallHeader: false});
-			console.log(this.state.smallHeader);
 		}
 	}
 
@@ -83,18 +86,19 @@ class App extends Component {
 				<Drawer
 					setSection={this.setSection}
 					getSection={this.getSection}
-					open={this.state.drawerOpen}
+					getDrawerState={this.getDrawerState}
+					closeDrawer={this.closeDrawer}
 				/>
         <Header
 					getSection={this.getSection}
 					toggleDrawer={this.toggleDrawer}
-					drawerOpen={this.state.drawerOpen}
 					smallHeader={this.state.smallHeader}
+					getDrawerState={this.getDrawerState}
 				/>
         <Body
 					getSection={this.getSection}
-					drawerOpen={this.state.drawerOpen}
 					closeDrawer={this.closeDrawer}
+					getDrawerState={this.getDrawerState}
         />
         <Footer />
       </div>

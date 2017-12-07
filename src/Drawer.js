@@ -65,7 +65,10 @@ class Drawer extends Component {
 	// Create and return the top banner of the drawer.
 	createDrawerBanner() {
 		return (
-			<div className="drawer-banner-wrapper">
+			<div
+				className="drawer-banner-wrapper"
+				onClick={() => this.props.closeDrawer()}
+			>
 				<img className="profile-image" src={profileImage} alt="profile"/>
 			</div>
 		);
@@ -90,7 +93,7 @@ class Drawer extends Component {
 
   render() {
 		let className = "Drawer noselect";
-		className += this.props.open ? " open" : "";
+		className += this.props.getDrawerState() ? " open" : "";
 
     return (
       <div className={className}>
@@ -115,10 +118,8 @@ class SectionListItem extends Component {
 	}
 
 	render() {
-		let className = this.props.isSubSection ? "subsection-list-item" : "section-list-item";
-		if(this.isSelected()) {
-			className += " active";
-		}
+		let className = this.props.isSubSection ? "subsection-list-item " : "section-list-item ";
+		className += this.isSelected() ? "active " : "";
 
 		return (
 			<div>

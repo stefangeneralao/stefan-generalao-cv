@@ -22,7 +22,8 @@ class Body extends Component {
   }
 
   render() {
-		const className = this.props.drawerOpen ? "Body drawer-open" : "Body";
+		let className = "Body ";
+		className += this.props.getDrawerState() ? "drawer-open" : "";
 
     return (
       <div id="Body" className={className} onClick={() => {this.onClickHandler()}}>

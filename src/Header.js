@@ -28,9 +28,8 @@ class Header extends Component {
 
   render() {
 		let className = "Header ";
-		className += this.props.drawerOpen ? "drawer-open " : "";
+		className += this.props.getDrawerState() ? "drawer-open " : "";
 		className += this.props.smallHeader ? "small " : "";
-		console.log(className);
 
     return (
       <div
