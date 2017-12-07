@@ -16,12 +16,21 @@ class App extends Component {
 			selectedSection: "Intro",
 			drawerOpen: false
 		};
-    this.setSection = this.setSection.bind(this);
 		this.openDrawer = this.openDrawer.bind(this);
 		this.closeDrawer = this.closeDrawer.bind(this);
 		this.toggleDrawer = this.toggleDrawer.bind(this);
+		this.setSection = this.setSection.bind(this);
 		this.getSection = this.getSection.bind(this);
+		this.handleScroll = this.handleScroll.bind(this);
   }
+
+	componentDidMount() {
+		window.addEventListener('scroll', this.handleScroll);
+	}
+
+	handleScroll(event) {
+		console.log("Scrolled")
+	}
 
 	// Function for selecting a section in the navigation.
   setSection(section) {
@@ -63,19 +72,19 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="App" onScroll={() => this.handleScroll()}>
 				<Drawer
 					setSection={this.setSection}
 					getSection={this.getSection}
 					open={this.state.drawerOpen}
 				/>
         <Header
-					selectedSection={this.state.selectedSection}
+					getSection={this.getSection}
 					toggleDrawer={this.toggleDrawer}
 					drawerOpen={this.state.drawerOpen}
 				/>
         <Body
-          selectedSection={this.state.selectedSection}
+					getSection={this.getSection}
 					drawerOpen={this.state.drawerOpen}
 					closeDrawer={this.closeDrawer}
         />
