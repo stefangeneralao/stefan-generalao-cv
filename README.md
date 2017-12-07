@@ -13,7 +13,7 @@ Clone this repository and run <code>yarn install</code> to install all dependenc
 ### Deploy development server
 Run <code>yarn start</code>. Port 3000 is default but may be changed in package.json.
 
-### Run build.
+### Run build
 Run <code>yarn build</code> to compile.
 
 Let yarn add serve by running <code>yarn global add serve</code>.
