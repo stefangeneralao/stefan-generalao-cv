@@ -14,7 +14,8 @@ class App extends Component {
     super();
     this.state = {
 			selectedSection: "Intro",
-			drawerOpen: false
+			drawerOpen: false,
+			smallHeader: false,
 		};
 		this.openDrawer = this.openDrawer.bind(this);
 		this.closeDrawer = this.closeDrawer.bind(this);
@@ -29,7 +30,13 @@ class App extends Component {
 	}
 
 	handleScroll(event) {
-		console.log("Scrolled")
+		if(window.scrollY > 90) {
+			this.setState({smallHeader: true});
+			console.log(this.state.smallHeader);
+		} else {
+			this.setState({smallHeader: false});
+			console.log(this.state.smallHeader);
+		}
 	}
 
 	// Function for selecting a section in the navigation.
@@ -72,7 +79,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App" onScroll={() => this.handleScroll()}>
+      <div id="App" onScroll={() => this.handleScroll()}>
 				<Drawer
 					setSection={this.setSection}
 					getSection={this.getSection}
@@ -82,6 +89,7 @@ class App extends Component {
 					getSection={this.getSection}
 					toggleDrawer={this.toggleDrawer}
 					drawerOpen={this.state.drawerOpen}
+					smallHeader={this.state.smallHeader}
 				/>
         <Body
 					getSection={this.getSection}

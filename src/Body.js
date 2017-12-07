@@ -15,7 +15,7 @@ class Body extends Component {
     });
 
     return (
-      <div>
+      <div className="Cards">
         {cards}
       </div>
     );
@@ -25,7 +25,7 @@ class Body extends Component {
 		const className = this.props.drawerOpen ? "Body drawer-open" : "Body";
 
     return (
-      <div className={className} onClick={() => {this.onClickHandler()}}>
+      <div id="Body" className={className} onClick={() => {this.onClickHandler()}}>
         {this.createContent()}
       </div>
     );
