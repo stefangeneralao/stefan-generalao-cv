@@ -64,7 +64,8 @@ const storage = {
     {
       section: "Avslutade studiemeriter",
       content: [
-        {subtitle: "Sammanfattning"},
+        {title: "Sammanfattning"},
+				{divider: "full"},
 				{paragraph: "Kurser på totalt 50,5 högskolepoäng och omfattar stora delar inom inbyggda system."}
       ]
     },
@@ -170,7 +171,8 @@ const storage = {
     {
       section: "Pågående studiemeriter",
       content: [
-        {subtitle: "Sammanfattning"},
+        {title: "Sammanfattning"},
+				{divider: "full"},
 				{paragraph: "Student på Informationsarkitektprogrammet, Malmö Högskola. Förväntad examen våren 2020."}
       ]
     },
