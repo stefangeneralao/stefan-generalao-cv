@@ -2,7 +2,7 @@
 This repository is the official portfolio for Stefan Generalao but may be used as a template for other projects.
 
 ### Are you an employer?
-Please visit <a href="http://stefangeneralao.fyi" target="blank">www.stefangeneralao.fyi</a> for a live demo.
+Please visit <a href="http://stefangeneralao.fyi" target="_blank">www.stefangeneralao.fyi</a> for a live demo.
 
 ## Installing
 ### Installing repository
