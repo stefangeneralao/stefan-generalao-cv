@@ -230,11 +230,6 @@ li {
     display: none;
 }
 
-.Header.drawer-open, .Body.drawer-open, .Footer.drawer-open {
-	transition: 300ms;
-	filter: brightness(0.5) grayscale(100%);
-}
-
 /*Tablet*/
 @media screen and (max-width: 950px) {
   .Drawer {
@@ -264,6 +259,10 @@ li {
     margin-top: 16px;
     margin-left: 20px;
   }
+	.Header.drawer-open, .Body.drawer-open, .Footer.drawer-open {
+		transition: 300ms;
+		filter: brightness(0.5) grayscale(100%);
+	}
 }
 
 /* Mobile */
@@ -303,4 +302,8 @@ li {
     margin-top: 15px;
     margin-left: 20px;
   }
+	.Header.drawer-open, .Body.drawer-open, .Footer.drawer-open {
+		transition: 300ms;
+		filter: brightness(0.5) grayscale(100%);
+	}
 }
