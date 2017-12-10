@@ -20,5 +20,5 @@ Clone this repository.
 
 <code>serve -s build</code> will deploy the build-server.
 
-## Interested working with me?
+## Are you interested in working with me?
 Don't hesitate to send me a message.
