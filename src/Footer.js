@@ -8,7 +8,7 @@ class Footer extends Component {
     return (
       <div className={className}>
           <p>Stefan Generalao</p>
-          <p><a href="mailto:someone@example.com"> stefan.generalao@gmail.com</a></p>
+          <p><a href="mailto:stefan.generalao@gmail.com"> stefan.generalao@gmail.com</a></p>
           <p>0768720573</p>
       </div>
     );
