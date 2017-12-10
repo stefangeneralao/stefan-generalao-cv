@@ -7,7 +7,7 @@ const storage = {
     {
 			id: "Utbildning",
 			subSections: [
-				{id: "Avslutade"},
+				{id: "Avslutad"},
 				{id: "Pågående"},
 			]
 		},
@@ -58,7 +58,7 @@ const storage = {
     },
 
     {
-      section: "Avslutade",
+      section: "Avslutad",
       content: [
         {title: "Sammanfattning"},
 				{divider: "full"},
@@ -67,7 +67,7 @@ const storage = {
     },
 
 		{
-			section: "Avslutade",
+			section: "Avslutad",
 			content: [
 				{title: "Programmering med Java, del II"},
         {divider: "full"},
@@ -81,7 +81,7 @@ const storage = {
 		},
 
 		{
-			section: "Avslutade",
+			section: "Avslutad",
 			content: [
 				{title: "Algoritmer och datastrukturer"},
         {divider: "full"},
@@ -95,7 +95,7 @@ const storage = {
 		},
 
 		{
-			section: "Avslutade",
+			section: "Avslutad",
 			content: [
 				{title: "Datorteknik"},
         {divider: "full"},
@@ -109,7 +109,7 @@ const storage = {
 		},
 
 		{
-			section: "Avslutade",
+			section: "Avslutad",
 			content: [
 				{title: "Digitalteknik"},
         {divider: "full"},
@@ -123,7 +123,7 @@ const storage = {
 		},
 
 		{
-			section: "Avslutade",
+			section: "Avslutad",
 			content: [
 				{title: "Perspektiv på elektroteknik"},
         {divider: "full"},
@@ -137,7 +137,7 @@ const storage = {
 		},
 
 		{
-			section: "Avslutade",
+			section: "Avslutad",
 			content: [
 				{title: "Envariabelanalys"},
         {divider: "full"},
@@ -151,7 +151,7 @@ const storage = {
 		},
 
     {
-      section: "Avslutade",
+      section: "Avslutad",
 			content: [
 				{title: "Programmering med Java"},
         {divider: "full"},
