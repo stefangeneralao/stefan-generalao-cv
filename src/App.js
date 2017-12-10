@@ -35,7 +35,7 @@ class App extends Component {
 	}
 
 	handleScroll(event) {
-		if(window.scrollY > 90) {
+		if(window.scrollY > 220) {
 			this.setState({smallHeader: true});
 		} else {
 			this.setState({smallHeader: false});
@@ -100,7 +100,9 @@ class App extends Component {
 					closeDrawer={this.closeDrawer}
 					getDrawerState={this.getDrawerState}
         />
-        <Footer />
+        <Footer
+					getDrawerState={this.getDrawerState}
+				/>
       </div>
     );
   }

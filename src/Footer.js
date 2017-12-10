@@ -2,14 +2,17 @@ import React, {Component} from 'react';
 
 class Footer extends Component {
   render() {
+		let className = "Footer ";
+		className += this.props.getDrawerState() ? "drawer-open" : "";
+
     return (
-      <div className="Footer">
+      <div className={className}>
           <p>Stefan Generalao</p>
           <p><a href="mailto:someone@example.com"> stefan.generalao@gmail.com</a></p>
           <p>0768720573</p>
       </div>
-    )
+    );
   }
 }
 
-export default Footer
+export default Footer;
