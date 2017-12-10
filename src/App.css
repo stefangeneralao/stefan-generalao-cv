@@ -138,6 +138,7 @@ li {
   font-weight: 600;
   transition: 400ms;
   white-space: nowrap;
+	cursor: pointer;
 }
 
 .section-list-item-icon {
