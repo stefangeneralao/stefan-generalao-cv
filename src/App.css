@@ -21,7 +21,7 @@ h3 {
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
   z-index: 4;
 	filter: none;
-	transition: height 150ms, filter 500ms;
+	transition: height 200ms, filter 500ms;
 }
 
 .Header > .menu-icon {
@@ -33,7 +33,7 @@ h3 {
   font-size: 2.5em;
   margin-top: 60px;
 	white-space: nowrap;
-	transition: 150ms;
+	transition: 200ms;
 }
 
 .Header.small {
@@ -74,10 +74,10 @@ h3 {
 .Body {
   background-color: #dddede;
   position: relative;
-  margin-left: 300px;
-  margin-top: 160px;
+  padding-left: 300px;
+  padding-top: 160px;
+	padding-bottom: 30px;
   margin-bottom: 160px;
-  padding: 5px;
   z-index: 3;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
 	filter: none;
@@ -237,7 +237,7 @@ li {
     left: -350px;
   }
   .Body {
-    margin-left: 0;
+    padding-left: 0;
   }
   .Header, .Footer {
     left: 0;
@@ -250,7 +250,7 @@ li {
     margin-top: 65px;
     margin-left: 45px;
     display: initial;
-		transition: 150ms;
+		transition: 200ms;
   }
 	.Header.small h1{
 		padding-left: 55px;
@@ -259,6 +259,7 @@ li {
     width: 30px;
     margin-top: 16px;
     margin-left: 20px;
+		transition: 150ms;
   }
 	.Header.drawer-open, .Body.drawer-open, .Footer.drawer-open {
 		transition: 300ms;
@@ -269,9 +270,9 @@ li {
 /* Mobile */
 @media screen and (max-width: 600px), screen and (max-height: 550px) {
   .Body {
-    margin-top: 60px;
     padding-left: 0;
     padding-right: 0;
+		padding-top: 60px;
   }
   .Card {
     margin: 15px 5px;
