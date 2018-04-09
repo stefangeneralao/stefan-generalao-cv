@@ -14,10 +14,11 @@ const storage = {
     {
 			id: "Färdigheter",
 			subSections: [
-				{id: "Maskininlärning"},
 				{id: "Webbteknologier"},
+				{id: "Maskininlärning"},
 				{id: "IoT"},
 				{id: "3D-printing och design"},
+				{id: "Systemutveckling"},
 				{id: "Övrigt"},
 			]
 		},
@@ -51,7 +52,7 @@ const storage = {
       content: [
         {title: "Om denna webbapplikationen"},
         {divider: "full"},
-				{paragraph: "Applikationen på domänen www.stefangeneralao.fyi är skriven av mig. Som verktyg valde jag ReactJS för frontend och servern är på en Raspberry PI med Debian."},
+				{paragraph: "Applikationen på domänen www.stefangeneralao.fyi är skriven av mig. Som verktyg valde jag ReactJS för klientsidan och servern är på en Raspberry PI med Debian."},
 				{paragraph: "Gå gärna in och kolla på min Github. Upptäcker ni buggar, andra problem eller har synpunkter? Skicka gärna in en issue eller pull-request!"},
         {link: "https://github.com/stefangeneralao/stefan-generalao-cv"}
       ]
@@ -62,9 +63,69 @@ const storage = {
       content: [
         {title: "Sammanfattning"},
 				{divider: "full"},
-				{paragraph: "Kurser på totalt 50,5 högskolepoäng som omfattar stora delar inom inbyggda system."}
+				{paragraph: "Kurser på totalt 88.5 högskolepoäng som omfattar delar inom inbyggda system, datavetenskap och informationsvetenskap."}
       ]
     },
+
+		{
+			section: "Avslutad",
+			content: [
+				{title: "Databasteknik"},
+        {divider: "full"},
+				{subtitle: "Lärosäte"},
+				{paragraph: "Malmö Universitet"},
+				{subtitle: "Högskolepoäng"},
+				{paragraph: "7.5"}
+			]
+		},
+
+		{
+			section: "Avslutad",
+			content: [
+				{title: "Introduktion till programmering (Python)"},
+        {divider: "full"},
+				{subtitle: "Lärosäte"},
+				{paragraph: "Malmö Universitet"},
+				{subtitle: "Högskolepoäng"},
+				{paragraph: "7.5"}
+			]
+		},
+
+		{
+			section: "Avslutad",
+			content: [
+				{title: "Introduktion till interaktionsdesign"},
+        {divider: "full"},
+				{subtitle: "Lärosäte"},
+				{paragraph: "Malmö Universitet"},
+				{subtitle: "Högskolepoäng"},
+				{paragraph: "7.5"}
+			]
+		},
+
+		{
+			section: "Avslutad",
+			content: [
+				{title: "Introduktion till webbutveckling"},
+        {divider: "full"},
+				{subtitle: "Lärosäte"},
+				{paragraph: "Malmö Universitet"},
+				{subtitle: "Högskolepoäng"},
+				{paragraph: "7.5"}
+			]
+		},
+
+		{
+			section: "Avslutad",
+			content: [
+				{title: "Introduktion till datavetenskap"},
+        {divider: "full"},
+				{subtitle: "Lärosäte"},
+				{paragraph: "Malmö Universitet"},
+				{subtitle: "Högskolepoäng"},
+				{paragraph: "7.5"}
+			]
+		},
 
 		{
 			section: "Avslutad",
@@ -72,11 +133,11 @@ const storage = {
 				{title: "Programmering med Java, del II"},
         {divider: "full"},
 				{subtitle: "Lärosäte"},
-				{paragraph: "Malmö högskola"},
+				{paragraph: "Malmö Universitet"},
 				{subtitle: "Högskolepoäng"},
 				{paragraph: "7.5"},
-				{subtitle: "Godkänt datum"},
-				{paragraph: "160611"}
+				// {subtitle: "Godkänt datum"},
+				// {paragraph: "160611"}
 			]
 		},
 
@@ -89,8 +150,8 @@ const storage = {
 				{paragraph: "Högskolan i Halmstad"},
 				{subtitle: "Högskolepoäng"},
 				{paragraph: "7.5"},
-				{subtitle: "Godkänt datum"},
-				{paragraph: "151008"}
+				// {subtitle: "Godkänt datum"},
+				// {paragraph: "151008"}
 			]
 		},
 
@@ -103,8 +164,8 @@ const storage = {
 				{paragraph: "Högskolan i Halmstad"},
 				{subtitle: "Högskolepoäng"},
 				{paragraph: "7.5"},
-				{subtitle: "Godkänt datum"},
-				{paragraph: "150616"}
+				// {subtitle: "Godkänt datum"},
+				// {paragraph: "150616"}
 			]
 		},
 
@@ -117,8 +178,8 @@ const storage = {
 				{paragraph: "Högskolan i Halmstad"},
 				{subtitle: "Högskolepoäng"},
 				{paragraph: "7.5"},
-				{subtitle: "Godkänt datum"},
-				{paragraph: "150422"}
+				// {subtitle: "Godkänt datum"},
+				// {paragraph: "150422"}
 			]
 		},
 
@@ -131,8 +192,8 @@ const storage = {
 				{paragraph: "Högskolan i Halmstad"},
 				{subtitle: "Högskolepoäng"},
 				{paragraph: "7.5"},
-				{subtitle: "Godkänt datum"},
-				{paragraph: "150130"}
+				// {subtitle: "Godkänt datum"},
+				// {paragraph: "150130"}
 			]
 		},
 
@@ -145,8 +206,8 @@ const storage = {
 				{paragraph: "Högskolan i Halmstad"},
 				{subtitle: "Högskolepoäng"},
 				{paragraph: "6.0"},
-				{subtitle: "Godkänt datum"},
-				{paragraph: "150117"}
+				// {subtitle: "Godkänt datum"},
+				// {paragraph: "150117"}
 			]
 		},
 
@@ -159,8 +220,8 @@ const storage = {
 				{paragraph: "Högskolan i Halmstad"},
 				{subtitle: "Högskolepoäng"},
 				{paragraph: "7.5"},
-				{subtitle: "Godkänt datum"},
-				{paragraph: "141119"}
+				// {subtitle: "Godkänt datum"},
+				// {paragraph: "141119"}
 			]
     },
 
@@ -169,29 +230,29 @@ const storage = {
       content: [
         {title: "Sammanfattning"},
 				{divider: "full"},
-				{paragraph: "Student på Informationsarkitektprogrammet, Malmö Högskola. Förväntad examen våren 2020."}
+				{paragraph: "Student på Informationsarkitektprogrammet, Malmö Universitet. Förväntad examen våren 2020."}
       ]
     },
 
 		{
 			section: "Pågående",
 			content: [
-				{title: "Introduktion till webbutveckling"},
-        {divider: "full"},
+				{title: "Systemutveckling och Projekt I"},
+				{divider: "full"},
 				{subtitle: "Lärosäte"},
-				{paragraph: "Malmö högskola"},
+				{paragraph: "Malmö Universitet"},
 				{subtitle: "Högskolepoäng"},
-				{paragraph: "7.5"}
+				{paragraph: "15.0"}
 			]
 		},
 
 		{
 			section: "Pågående",
 			content: [
-				{title: "Introduktion till datavetenskap"},
-        {divider: "full"},
+				{title: "Informationsarkitektur I"},
+				{divider: "full"},
 				{subtitle: "Lärosäte"},
-				{paragraph: "Malmö högskola"},
+				{paragraph: "Malmö Universitet"},
 				{subtitle: "Högskolepoäng"},
 				{paragraph: "7.5"}
 			]
@@ -204,52 +265,6 @@ const storage = {
         {divider: "full"},
 				{subtitle: "Lärosäte"},
 				{paragraph: "Udemy"}
-			]
-		},
-
-		{
-			section: "Maskininlärning",
-			content: [
-				{title: "Sammanfattning"},
-        {divider: "full"},
-				{paragraph: "Deep learning förutspås att stå för den fjärde industriella revolutionen och har redan bidragit till stora delar av samhället. Mina favoritarkitekturer att implementera är ANN, CNN och RNN. Jag har även kunskap om avancerade arkitekturer som Boltzmann Machine, Autoencoders och Self Organizing Maps."},
-			]
-		},
-
-		{
-			section: "Maskininlärning",
-			content: [
-				{title: "Keras"},
-        {divider: "full"},
-				{subtitle: "Kunnighet"},
-				{progressbar: 40},
-				{subtitle: "Detaljer"},
-				{paragraph: "Jag kan skapa Deep Neural Networks. Med fiktiva kunddatabaser har jag bland annat kunnat förutspå önskade egenskaper, till exempel sannolikheten att en bestämd kund kommer att säga upp sitt avtal inom ett halvår."},
-				{paragraph: "Med Convolutional Neural Network har jag konstruerat ett klassificeringssystem som ser skillnad på hundar och katter. Arkitekturen kan appliceras och användas inom många användningsområden, bland annat inom cancerklassificering."}
-			]
-		},
-
-		{
-			section: "Maskininlärning",
-			content: [
-				{title: "TensorFlow"},
-        {divider: "full"},
-				{subtitle: "Kunnighet"},
-				{progressbar: 20},
-				{subtitle: "Detaljer"},
-				{paragraph: "TensorFlow är back-end till Keras. För att använda Keras bör viss baskunskap i TensorFlow innehas."}
-			]
-		},
-
-		{
-			section: "Maskininlärning",
-			content: [
-				{title: "Synapse.js"},
-        {divider: "full"},
-				{subtitle: "Kunnighet"},
-				{progressbar: 10},
-				{subtitle: "Detaljer"},
-				{paragraph: "JavaScript-bibliotek för att bygga, träna och aktivera neurala nätverk. I Synapse testade jag att lösa det så kallade XOR-problemet som ofta anses vara det neurala nätverkets motsvarighet till Hello World."}
 			]
 		},
 
@@ -292,6 +307,30 @@ const storage = {
 		{
 			section: "Webbteknologier",
 			content: [
+				{title: "NodeJS"},
+        {divider: "full"},
+				{subtitle: "Kunnighet"},
+				{progressbar: 40},
+				{subtitle: "Detaljer"},
+				{paragraph: "Använder npm för pakethantering i många av mina projekt. Har även gjort motsvarande Hello World i att starta en server."}
+			]
+		},
+
+		{
+			section: "Webbteknologier",
+			content: [
+				{title: "socket.io"},
+        {divider: "full"},
+				{subtitle: "Kunnighet"},
+				{progressbar: 30},
+				{subtitle: "Detaljer"},
+				{paragraph: "Bibliotek till NodeJS för websockets. Biblioteket täcker både server och klient. Använder biblioteket i utvecklingsstacken till mitt smarta hem."}
+			]
+		},
+
+		{
+			section: "Webbteknologier",
+			content: [
 				{title: "Redux"},
         {divider: "full"},
 				{subtitle: "Kunnighet"},
@@ -304,10 +343,22 @@ const storage = {
 		{
 			section: "Webbteknologier",
 			content: [
-				{title: "Firebase"},
+				{title: "ExpressJS"},
         {divider: "full"},
 				{subtitle: "Kunnighet"},
 				{progressbar: 20},
+				{subtitle: "Detaljer"},
+				{paragraph: "Har kunskap att start server och hantera vanliga HTTP-request."}
+			]
+		},
+
+		{
+			section: "Webbteknologier",
+			content: [
+				{title: "Firebase"},
+        {divider: "full"},
+				{subtitle: "Kunnighet"},
+				{progressbar: 10},
 				{subtitle: "Detaljer"},
 				{paragraph: "I en personlig todo-applikation som jag utvecklade valde jag Firebase som databas."}
 			]
@@ -316,12 +367,60 @@ const storage = {
 		{
 			section: "Webbteknologier",
 			content: [
-				{title: "Node"},
+				{title: "GraphQL"},
         {divider: "full"},
 				{subtitle: "Kunnighet"},
 				{progressbar: 10},
 				{subtitle: "Detaljer"},
-				{paragraph: "Använder npm för pakethantering i många av mina projekt. Har även gjort motsvarande Hello World i att starta en server."}
+				{paragraph: "Har gjort motsvarande Hello World och förstått hur man använder tekniken."}
+			]
+		},
+
+		// {
+		// 	section: "Maskininlärning",
+		// 	content: [
+		// 		{title: "Sammanfattning"},
+    //     {divider: "full"},
+		// 		{paragraph: "Deep learning förutspås att stå för den fjärde industriella revolutionen och har redan bidragit till stora delar av samhället. Mina favoritarkitekturer att implementera är ANN, CNN och RNN. Jag har även kunskap om avancerade arkitekturer som Boltzmann Machine, Autoencoders och Self Organizing Maps."},
+		// 	]
+		// },
+
+		{
+			section: "Maskininlärning",
+			content: [
+				{title: "Keras"},
+        {divider: "full"},
+				{subtitle: "Kunnighet"},
+				{progressbar: 80},
+				{subtitle: "Detaljer"},
+				{paragraph: "Keras är ett högnivå-API till TensorFlow som kräver grundläggande kunskap i maskininlärning, deep learning och neurala nätverk. Kunskaper inom envariabelanalys och linjär algebra kan underlätta i utvecklingen."},
+				{paragraph: "Mitt nuvarande huvudprojektprojekt är en RNN-modell för att förutspå priset för Bitcoin. Se Bitburnn under sektionen projekt."},
+				{paragraph: "Jag kan skapa Deep Neural Networks. Med fiktiva kunddatabaser har jag bland annat kunnat förutspå önskade egenskaper, till exempel sannolikheten att en bestämd kund kommer att säga upp sitt avtal inom ett halvår."},
+				{paragraph: "Med Convolutional Neural Network har jag konstruerat ett klassificeringssystem som ser skillnad på hundar och katter. Arkitekturen appliceras i industrin, bland annat inom cancerklassificering och självkörande bilar."},
+			]
+		},
+
+		{
+			section: "Maskininlärning",
+			content: [
+				{title: "TensorFlow"},
+        {divider: "full"},
+				{subtitle: "Kunnighet"},
+				{progressbar: 20},
+				{subtitle: "Detaljer"},
+				{paragraph: "TensorFlow är backend till Keras. För att använda Keras bör viss baskunskap i TensorFlow innehas."}
+			]
+		},
+
+		{
+			section: "Maskininlärning",
+			content: [
+				{title: "Synapse.js"},
+        {divider: "full"},
+				{subtitle: "Kunnighet"},
+				{progressbar: 10},
+				{subtitle: "Detaljer"},
+				{paragraph: "JavaScript-bibliotek för att bygga, träna och aktivera neurala nätverk. I Synapse testade jag att lösa det så kallade XOR-problemet som ofta anses vara det neurala nätverkets motsvarighet till Hello World."}
 			]
 		},
 
@@ -422,6 +521,51 @@ const storage = {
 			]
 		},
 
+		// {
+		// 	section: "Systemutveckling",
+		// 	content: [
+		// 		{title: "Sammanfattning"},
+		// 		{divider: "full"},
+		// 		{paragraph: "Här nämner jag diverse systemutvecklingsverktyg som jag använt. Jag räknar med att denna listan kommer växa i en stadig takt."}
+		// 	]
+		// },
+
+		{
+			section: "Systemutveckling",
+			content: [
+				{title: "Git/Github"},
+				{divider: "full"},
+				{subtitle: "Kunnighet"},
+				{progressbar: 70},
+				{subtitle: "Detaljer"},
+				{paragraph: "Använder Git i majoriteten av mina projekt, stora som små. Har även bidragit med hjälp i projekt på Github."}
+			]
+		},
+
+		{
+			section: "Systemutveckling",
+			content: [
+				{title: "JetBrain YouTrack"},
+				{divider: "full"},
+				{subtitle: "Kunnighet"},
+				{progressbar: 50},
+				{subtitle: "Detaljer"},
+				{paragraph: "I kursen \"Systemutveckling och projekt\" använde vi YouTrack för att logga issues, tidsestimering och etc."}
+			]
+		},
+
+		{
+			section: "Systemutveckling",
+			content: [
+				{title: "Agila processer"},
+				{divider: "full"},
+				{subtitle: "Kunnighet"},
+				{progressbar: 30},
+				{subtitle: "Detaljer"},
+				{paragraph: "Har läst in mig på vanliga agila processer bland annat XP, Kanban och Scrum. I de vanligaste utvecklingsprojekten ser jag Scrum vara det uppenbara valet."}
+			]
+		},
+
 		{
 			section: "Övrigt",
 			content: [
@@ -464,9 +608,9 @@ const storage = {
 				{title: "Python"},
         {divider: "full"},
 				{subtitle: "Kunnighet"},
-				{progressbar: 30},
+				{progressbar: 40},
 				{subtitle: "Detaljer"},
-				{paragraph: "Läser för tillfället en högskolekurs i Python."}
+				{paragraph: "Har läst 7.5 högskolepoäng i Python. Har även programmerat en del maskininlärning tillsammans med bibliotek."}
 			]
 		},
 
@@ -475,7 +619,56 @@ const storage = {
 			content: [
 				{title: "Sammanfattning"},
         {divider: "full"},
-				{paragraph: "Åtskilliga timmar i servicebranchen varav mitt första jobb i mina föräldrars restaurang när jag var 11 år. Det gav mig ett utmärkt helhetsperspektiv av livet som entreprenör och värdet av bra lagarbete. Vikten av förstklassig service i alla branscher är jag väl medveten om sedan lång tid tillbaka."}
+				{paragraph: "Åtskilliga timmar i servicebranchen varav mitt första jobb i mina föräldrars restaurang när jag var 11 år. Det gav mig ett utmärkt helhetsperspektiv av livet som entreprenör och värdet av bra lagarbete. Vikten av förstklassig service i alla branscher är jag väl medveten om sedan lång tid tillbaka."},
+				{paragraph: "Just nu testar jag livet som utvecklare hos Trialbee. Inom akademin har jag även en position som mentor och anteckningsstöd för studenter. Som mentor hjälper jag främst till inom programmering, databasteknik och webbutveckling."}
+			]
+		},
+
+		{
+			section: "Arbetslivserfarenhet",
+			content: [
+				{title: "Trialbee AB"},
+        {divider: "full"},
+				{subtitle: "Position"},
+				{paragraph: "Software developer intern"},
+				{subtitle: "Arbetsuppgifter"},
+				{paragraph: "Mjukvaruutveckling huvudsakligen i klientsidan med bland annat React. Designsyntax enligt BEM i SCSS. Utveckling sker agilt."},
+				{subtitle: "Plats"},
+				{paragraph: "Malmö"},
+				{subtitle: "Period"},
+				{paragraph: "Pågående från 2018"}
+			]
+		},
+
+		{
+			section: "Arbetslivserfarenhet",
+			content: [
+				{title: "Malmö Universitet"},
+        {divider: "full"},
+				{subtitle: "Position"},
+				{paragraph: "Anteckningsstöd"},
+				{subtitle: "Arbetsuppgifter"},
+				{paragraph: "Anteckningsstöd för student på Informationsarkitektprogrammet."},
+				{subtitle: "Plats"},
+				{paragraph: "Malmö"},
+				{subtitle: "Period"},
+				{paragraph: "Pågående från 2018"}
+			]
+		},
+
+		{
+			section: "Arbetslivserfarenhet",
+			content: [
+				{title: "Malmö Universitet"},
+        {divider: "full"},
+				{subtitle: "Position"},
+				{paragraph: "Mentor"},
+				{subtitle: "Arbetsuppgifter"},
+				{paragraph: "Mentor för student på Informationsarkitektprogrammet i främst webbutveckling och programmering."},
+				{subtitle: "Plats"},
+				{paragraph: "Malmö"},
+				{subtitle: "Period"},
+				{paragraph: "Pågående från 2018"}
 			]
 		},
 
@@ -486,6 +679,8 @@ const storage = {
         {divider: "full"},
 				{subtitle: "Position"},
 				{paragraph: "Tekniker"},
+				{subtitle: "Arbetsuppgifter"},
+				{paragraph: "Reperation av hifi-produkter."},
 				{subtitle: "Plats"},
 				{paragraph: "Halmstad"},
 				{subtitle: "Period"},
@@ -552,12 +747,35 @@ const storage = {
 		{
 			section: "Projekt",
 			content: [
+				{title: "Bitburnn"},
+				{divider: "full"},
+				{subtitle: "Detaljer om projektet"},
+				{paragraph: "Bitburnn är en AI som förutspår priset för Bitcoin om två minuter. Prediktioner baseras på OHLC-historik för fem olika valutor. "},
+				{paragraph: "Historik med kvalitetsdata är svår att få tag på utan att betala. Därför byggde jag en databas tillsammans med en worker som alltid hämtar data från API. Bitburnn hämtar i sin tur data från databasen med högt förtroende."}
+			]
+		},
+
+		{
+			section: "Projekt",
+			content: [
 				{title: "WhatRemote"},
 				{divider: "full"},
 				{subtitle: "Detaljer om projektet"},
 				{paragraph: "Mitt egna smarta hem kallar jag WhatRemote. Med systemet styr jag TV, förstärkare och vägguttag med en applikation i Android. Alla fjärrkontroller i vardagsrummet har blivit ersatta av WhatRemote."},
 				{paragraph: "Microprocessorn är Atmel ATMega328 och koden är skriven av mig i C++."},
 				{paragraph: "Demovisning erbjuds för alla gäster. Välkommen!"}
+			]
+		},
+
+		{
+			section: "Projekt",
+			content: [
+				{title: "WhatRemote 2 (pågående)"},
+				{divider: "full"},
+				{subtitle: "Detaljer om projektet"},
+				{paragraph: "I den uppdaterade versionen av mitt smarta hem kommer koden inte längre vara skriven i C++, hela utvecklingsstacken ersätts av JavaScript. Anledningen är kraftfulla nätverksteknologier, grafiska gränssnitt och för att jag älskar JavaScript."},
+				{paragraph: "Serversidan körs i NodeJS och klientsidan med ReactJS. Med biblioteket onoff på serversidan kontrolleras hårdvaran till Raspberry PI vilken kommer att ersätta ATMega328. För att uppdatera gränssnittet för alla klienter när hårdvarans tillstånd ändras använder jag websockets i både server och klient."},
+				{paragraph: "Det enda som saknas är bara att hetta upp lödkolven och börja löda."}
 			]
 		},
 
@@ -570,6 +788,18 @@ const storage = {
 				{paragraph: "Källkoden för webbapplikationen du just nu använder hittar du i denna Github-repository. Förutom att jag ville ha en portfolio så fokuserade jag mycket på feedback från människor i detta projektet. Jag lärde mig lyssna, ställa relevanta frågor och tolka användares reaktioner. Projektet har varit en tydligt iterativ process som fortfarande är aktiv."},
 				{subtitle: "Länk"},
 				{link: "https://github.com/stefangeneralao/stefan-generalao-cv"}
+			]
+		},
+
+		{
+			section: "Projekt",
+			content: [
+				{title: "Eventizer"},
+				{divider: "full"},
+				{subtitle: "Detaljer om projektet"},
+				{paragraph: "Projektarbete i kursen \"Systemutveckling och projekt\". Projektets mål var att under utställningsdagen presentera andra studenters projekt med en webbapplikation. Webbapplikationens klientsida är skriven i ReactJS och serversida i NodeJS."},
+				{subtitle: "Länk"},
+				{link: "https://github.com/stefangeneralao/eventizer"}
 			]
 		},
 
