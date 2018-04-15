@@ -288,7 +288,7 @@ const storage = {
 				{subtitle: "Kunnighet"},
 				{progressbar: 70},
 				{subtitle: "Detaljer"},
-				{paragraph: "Mitt intresse i ReactJS gör att mina kunskaper växer snabbt! Idag är jag bekväm i React-komponentens livscykel, state och props. Tillverkar snabbt både stateless och stateful komponenter. Skriver min kod i ES6 och följer Airbnbs kodriktlinjer till punkt och pricka."}
+				{paragraph: "Mitt intresse i ReactJS gör att mina kunskaper växer snabbt! Idag är jag bekväm i React-komponentens livscykel, state och props. Tillverkar snabbt både stateless och stateful komponenter. Skriver min kod i ES6 samt enligt Airbnbs kodriktlinjer för ReactJS och JavaScript."}
 			]
 		},
 
