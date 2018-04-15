@@ -38,9 +38,9 @@ const storage = {
 
 				{paragraph: "Innan jag påbörjade studierna i Malmö hade jag avslutat flera högskolekurser inom inbyggda system samt genomfört omkring 500 timmar hårdvaruprogrammering i Arduino. Jag har även varit aktiv i Halmstad Högskolas entreprenörskapsinkubator där jag var involverad i två större IT-projekt."},
 
-				{paragraph: "Jag drivs av min nyfikenhet, vilket gör mig snabblärd och involverad och trots att min förra chef beskrev mig som ansvarsfull i soloprojekt är det i team jag föredrar att arbeta."},
+				{paragraph: "Jag drivs av min nyfikenhet, vilket gör mig snabblärd och involverad och trots att en tidigare chef beskrev mig som ansvarsfull i soloprojekt är det i team jag föredrar att arbeta."},
 
-				{paragraph: "Maskininlärning är ett stort intresse. På min fritid håller jag mig uppdaterad med de senaste studierna inom olika fält kring maskininlärning och då speciellt Deep Learning. Parallellt med detta läser jag också en distanskurs på Udemy i samma ämne. Webbteknologier som React, vilket den här sidan är skriven i, är också något som jag tycker är spännande. Jag brinner för nya system!"},
+				{paragraph: "Maskininlärning är ett stort intresse. På min fritid håller jag mig uppdaterad med de senaste studierna inom olika fält kring maskininlärning och då speciellt Deep Learning. Parallellt med detta läser jag också en distanskurs på Udemy i samma ämne. Webbteknologier som NodeJS och ReactJS är tycker jag också är spännande. Jag brinner för nya system!"},
 
 				{paragraph: "Navigationen finner ni till vänster. Välkommen hit!"},
 				{paragraph: "Stefan Generalao"}
@@ -283,12 +283,12 @@ const storage = {
 		{
 			section: "Webbteknologier",
 			content: [
-				{title: "React.js"},
+				{title: "ReactJS"},
         {divider: "full"},
 				{subtitle: "Kunnighet"},
 				{progressbar: 70},
 				{subtitle: "Detaljer"},
-				{paragraph: "Mitt intresse i React gör att mina kunskaper växer snabbt! Idag är jag bekväm i React-komponentens livscykel, state och props. Har även anslutit React-applikationer med Firebase."}
+				{paragraph: "Mitt intresse i ReactJS gör att mina kunskaper växer snabbt! Idag är jag bekväm i React-komponentens livscykel, state och props. Tillverkar snabbt både stateless och stateful komponenter. Skriver min kod i ES6 och följer Airbnbs kodriktlinjer till punkt och pricka."}
 			]
 		},
 
@@ -310,9 +310,9 @@ const storage = {
 				{title: "NodeJS"},
         {divider: "full"},
 				{subtitle: "Kunnighet"},
-				{progressbar: 40},
+				{progressbar: 50},
 				{subtitle: "Detaljer"},
-				{paragraph: "Använder npm för pakethantering i många av mina projekt. Har även gjort motsvarande Hello World i att starta en server."}
+				{paragraph: "NodeJS är mitt förstahandsval till alla projekt som kräver en serversida."}
 			]
 		},
 
@@ -322,21 +322,33 @@ const storage = {
 				{title: "socket.io"},
         {divider: "full"},
 				{subtitle: "Kunnighet"},
-				{progressbar: 30},
+				{progressbar: 40},
 				{subtitle: "Detaljer"},
-				{paragraph: "Bibliotek till NodeJS för websockets. Biblioteket täcker både server och klient. Använder biblioteket i utvecklingsstacken till mitt smarta hem."}
+				{paragraph: "Bibliotek för att använda websockets till både server- och klientsida. Tillsammans med ReactJS och NodeJS använder jag biblioteket i utvecklingsstacken till mitt smarta hem. Se Whatremote 2 under projekt."}
 			]
 		},
 
 		{
 			section: "Webbteknologier",
 			content: [
-				{title: "Redux"},
+				{title: "React Redux DOM"},
         {divider: "full"},
 				{subtitle: "Kunnighet"},
 				{progressbar: 30},
 				{subtitle: "Detaljer"},
 				{paragraph: "Har testat att implementera Redux i React-applikationer. Redux är ett intressant koncept som jag ser stor nytta i vid större projekt."}
+			]
+		},
+
+		{
+			section: "Webbteknologier",
+			content: [
+				{title: "Axios"},
+        {divider: "full"},
+				{subtitle: "Kunnighet"},
+				{progressbar: 30},
+				{subtitle: "Detaljer"},
+				{paragraph: "Bibliotek för att förenkla HTTP-request på klientsida. Använde Axios i slutprojektet i kursen Databasteknik. Genom att utnyttja React-komponentens livscykel är Axios väldigt effektivt."}
 			]
 		},
 
@@ -593,24 +605,36 @@ const storage = {
 		{
 			section: "Övrigt",
 			content: [
-				{title: "Java"},
+				{title: "Python"},
         {divider: "full"},
 				{subtitle: "Kunnighet"},
-				{progressbar: 50},
+				{progressbar: 60},
 				{subtitle: "Detaljer"},
-				{paragraph: "Jag har totalt 22.5 högskolepoäng i kurser med javaprogrammering. I kurserna byggde jag algoritmer, datastrukturer och GUI."}
+				{paragraph: "För maskininlärning är Python det uppenbara valet för mig. Många välutvecklade bibliotek är utvecklade för Python, bland annat TensorFlow, Keras och Scikit Learn. Förutom maskininlärning, big data och kringliggande ämnen har jag även skapat webbservrar med ramverket Bottle."}
 			]
 		},
 
 		{
 			section: "Övrigt",
 			content: [
-				{title: "Python"},
+				{title: "PostgreSQL"},
         {divider: "full"},
 				{subtitle: "Kunnighet"},
-				{progressbar: 40},
+				{progressbar: 50},
 				{subtitle: "Detaljer"},
-				{paragraph: "Har läst 7.5 högskolepoäng i Python. Har även programmerat en del maskininlärning tillsammans med bibliotek."}
+				{paragraph: "I kursen \"Databasteknik\" användes PostgreSQL. I kursen ingick även lärandemoment om normalisering, indexer, transaktioner och givetvis diverse SQL-syntax."}
+			]
+		},
+
+		{
+			section: "Övrigt",
+			content: [
+				{title: "Java"},
+        {divider: "full"},
+				{subtitle: "Kunnighet"},
+				{progressbar: 30},
+				{subtitle: "Detaljer"},
+				{paragraph: "Jag har totalt 22.5 högskolepoäng i kurser med javaprogrammering. I kurserna byggde jag algoritmer, datastrukturer och GUI."}
 			]
 		},
 
@@ -620,7 +644,7 @@ const storage = {
 				{title: "Sammanfattning"},
         {divider: "full"},
 				{paragraph: "Åtskilliga timmar i servicebranchen varav mitt första jobb i mina föräldrars restaurang när jag var 11 år. Det gav mig ett utmärkt helhetsperspektiv av livet som entreprenör och värdet av bra lagarbete. Vikten av förstklassig service i alla branscher är jag väl medveten om sedan lång tid tillbaka."},
-				{paragraph: "Just nu testar jag livet som utvecklare hos Trialbee. Inom akademin har jag även en position som mentor och anteckningsstöd för studenter. Som mentor hjälper jag främst till inom programmering, databasteknik och webbutveckling."}
+				{paragraph: "Just nu testar jag livet som utvecklare hos Trialbee. Inom akademin har jag även en position som mentor och anteckningsstöd för studenter."}
 			]
 		},
 
@@ -632,7 +656,7 @@ const storage = {
 				{subtitle: "Position"},
 				{paragraph: "Software developer intern"},
 				{subtitle: "Arbetsuppgifter"},
-				{paragraph: "Mjukvaruutveckling huvudsakligen i klientsidan med bland annat React. Designsyntax enligt BEM i SCSS. Utveckling sker agilt."},
+				{paragraph: "Mjukvaruutveckling huvudsakligen i klientsidan med bland annat ReactJS. Designsyntax enligt BEM i SCSS. Utveckling sker agilt."},
 				{subtitle: "Plats"},
 				{paragraph: "Malmö"},
 				{subtitle: "Period"},
@@ -664,7 +688,7 @@ const storage = {
 				{subtitle: "Position"},
 				{paragraph: "Mentor"},
 				{subtitle: "Arbetsuppgifter"},
-				{paragraph: "Mentor för student på Informationsarkitektprogrammet i främst webbutveckling och programmering."},
+				{paragraph: "Mentor för student på Informationsarkitektprogrammet i främst webbutveckling, databasteknik och programmering."},
 				{subtitle: "Plats"},
 				{paragraph: "Malmö"},
 				{subtitle: "Period"},
@@ -750,8 +774,8 @@ const storage = {
 				{title: "Bitburnn"},
 				{divider: "full"},
 				{subtitle: "Detaljer om projektet"},
-				{paragraph: "Bitburnn är en AI som förutspår priset för Bitcoin om två minuter. Prediktioner baseras på OHLC-historik för fem olika valutor. "},
-				{paragraph: "Historik med kvalitetsdata är svår att få tag på utan att betala. Därför byggde jag en databas tillsammans med en worker som alltid hämtar data från API. Bitburnn hämtar i sin tur data från databasen med högt förtroende."}
+				{paragraph: "Bitburnn är en maskininlärningsalgoritm som förutspår priset för Bitcoin om två minuter. Prediktioner baseras bland annat på OHLC-historik från flera olika valutor."},
+				{paragraph: "Historik med kvalitetsdata är svår att få tag på utan att betala. Därför utvecklades en separat applikation som hämtar data från API och lagrar datan i en tidsserie databas. Bitburnn-algoritmen hämtar i sin tur data från databasen med högt förtroende om att datan är av hög kvalitet."}
 			]
 		},
 
@@ -773,9 +797,9 @@ const storage = {
 				{title: "WhatRemote 2 (pågående)"},
 				{divider: "full"},
 				{subtitle: "Detaljer om projektet"},
-				{paragraph: "I den uppdaterade versionen av mitt smarta hem kommer koden inte längre vara skriven i C++, hela utvecklingsstacken ersätts av JavaScript. Anledningen är kraftfulla nätverksteknologier, grafiska gränssnitt och för att jag älskar JavaScript."},
-				{paragraph: "Serversidan körs i NodeJS och klientsidan med ReactJS. Med biblioteket onoff på serversidan kontrolleras hårdvaran till Raspberry PI vilken kommer att ersätta ATMega328. För att uppdatera gränssnittet för alla klienter när hårdvarans tillstånd ändras använder jag websockets i både server och klient."},
-				{paragraph: "Det enda som saknas är bara att hetta upp lödkolven och börja löda."}
+				{paragraph: "I den uppdaterade versionen av mitt smarta hem är koden inte längre skriven i C++, hela utvecklingsstacken har ersatts av JavaScript. Anledningen är kraftfulla nätverksteknologier, grafiska gränssnitt och för att jag älskar JavaScript. Hårdvaran får också en uppgradering från ATMega328 till Raspberry Pi."},
+				{paragraph: "Serversidan körs i NodeJS och klientsidan med ReactJS. Kommunikation mellan server och klient sker uteslutande med websockets för att uppdatera alla anslutna klienter i realtid. Med biblioteket onoff på serversidan kontrolleras hårdvaran för att bland annat starta kaffekokaren, tända lampor och mäta jordfuktigheten i alla blomkrukor."},
+				{paragraph: "Koden till projektet är färdig. Det enda som saknas innan nästa nivå av vardagslyx är bara att hetta upp lödkolven och börja löda."}
 			]
 		},
 
@@ -785,7 +809,7 @@ const storage = {
 				{title: "Stefan Generalao-CV"},
 				{divider: "full"},
 				{subtitle: "Detaljer om projektet"},
-				{paragraph: "Källkoden för webbapplikationen du just nu använder hittar du i denna Github-repository. Förutom att jag ville ha en portfolio så fokuserade jag mycket på feedback från människor i detta projektet. Jag lärde mig lyssna, ställa relevanta frågor och tolka användares reaktioner. Projektet har varit en tydligt iterativ process som fortfarande är aktiv."},
+				{paragraph: "Källkoden för denna webbapplikationen hittar du i följande Github-repository. Förutom att jag ville ha en portfolio så fokuserade jag mycket på feedback från människor i detta projektet. Jag lärde mig att lyssna, ställa relevanta frågor och utföra användbarhetstester reaktioner. Projektet har varit en iterativ process som fortfarande är aktiv och kommer sannolikt att vara det flera år framöver."},
 				{subtitle: "Länk"},
 				{link: "https://github.com/stefangeneralao/stefan-generalao-cv"}
 			]
@@ -794,10 +818,10 @@ const storage = {
 		{
 			section: "Projekt",
 			content: [
-				{title: "Eventizer"},
+				{title: "Eventizer (pågående)"},
 				{divider: "full"},
 				{subtitle: "Detaljer om projektet"},
-				{paragraph: "Projektarbete i kursen \"Systemutveckling och projekt\". Projektets mål var att under utställningsdagen presentera andra studenters projekt med en webbapplikation. Webbapplikationens klientsida är skriven i ReactJS och serversida i NodeJS."},
+				{paragraph: "Projektarbete till kursen \"Systemutveckling och projekt\". Projektets mål är att under utställningsdagen presentera andra studenters projekt med vår webbapplikation. Webbapplikationens klientsida är skriven i ReactJS och serversida i NodeJS. I projektet prioriteras scrum och dokumentation."},
 				{subtitle: "Länk"},
 				{link: "https://github.com/stefangeneralao/eventizer"}
 			]
