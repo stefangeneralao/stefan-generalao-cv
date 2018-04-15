@@ -26,9 +26,9 @@ class Body extends Component {
 		className += this.props.getDrawerState() ? "drawer-open" : "";
 
     return (
-      <div id="Body" className={className} onClick={() => {this.onClickHandler()}}>
+      <main id="Body" className={className} onClick={() => {this.onClickHandler()}}>
         {this.createContent()}
-      </div>
+      </main>
     );
   }
 }

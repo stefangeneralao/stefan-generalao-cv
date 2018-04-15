@@ -32,13 +32,13 @@ class Header extends Component {
 		className += this.props.smallHeader ? "small " : "";
 
     return (
-      <div
+      <header
 				className={className}
 				onClick={() => {this.onClickHandler()}}
 			>
 				{this.createMenuIcon()}
 				{this.createHeader()}
-      </div>
+      </header>
     );
   }
 }

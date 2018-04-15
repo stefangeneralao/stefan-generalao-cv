@@ -6,11 +6,11 @@ class Footer extends Component {
 		className += this.props.getDrawerState() ? "drawer-open" : "";
 
     return (
-      <div className={className}>
+      <footer className={className}>
           <p>Stefan Generalao</p>
           <p><a href="mailto:stefan.generalao@gmail.com"> stefan.generalao@gmail.com</a></p>
           <p>0768720573</p>
-      </div>
+      </footer>
     );
   }
 }

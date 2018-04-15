@@ -96,10 +96,10 @@ class Drawer extends Component {
 		className += this.props.getDrawerState() ? " open" : "";
 
     return (
-      <div className={className}>
+      <nav className={className}>
 				{this.createDrawerBanner()}
         {this.createSectionsList()}
-      </div>
+      </nav>
     );
   }
 }
