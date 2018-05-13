@@ -29,6 +29,8 @@ h3 {
 }
 
 .Header > h1 {
+	height: 50px;
+	line-height: 50px;
   padding-left: 105px;
   font-size: 2.5em;
   margin-top: 60px;
@@ -43,6 +45,8 @@ h3 {
 }
 
 .Header.small h1 {
+	height: 0;
+	line-height: 25px;
 	font-size: 1.2rem;
 	padding-left: 50px;
 	margin-top: 20px;
