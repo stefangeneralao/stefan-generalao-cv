@@ -70,6 +70,30 @@ const storage = {
 		{
 			section: "Avslutad",
 			content: [
+				{title: "Informationsarkitektur I"},
+				{divider: "full"},
+				{subtitle: "Lärosäte"},
+				{paragraph: "Malmö Universitet"},
+				{subtitle: "Högskolepoäng"},
+				{paragraph: "7.5"}
+			]
+		},
+
+		{
+			section: "Avslutad",
+			content: [
+				{title: "Systemutveckling och Projekt I"},
+				{divider: "full"},
+				{subtitle: "Lärosäte"},
+				{paragraph: "Malmö Universitet"},
+				{subtitle: "Högskolepoäng"},
+				{paragraph: "15.0"}
+			]
+		},
+
+		{
+			section: "Avslutad",
+			content: [
 				{title: "Databasteknik"},
         {divider: "full"},
 				{subtitle: "Lärosäte"},
@@ -237,19 +261,43 @@ const storage = {
 		{
 			section: "Pågående",
 			content: [
-				{title: "Systemutveckling och Projekt I"},
+				{title: "Informationsarkitektur II"},
 				{divider: "full"},
 				{subtitle: "Lärosäte"},
 				{paragraph: "Malmö Universitet"},
 				{subtitle: "Högskolepoäng"},
-				{paragraph: "15.0"}
+				{paragraph: "7.5"}
 			]
 		},
 
 		{
 			section: "Pågående",
 			content: [
-				{title: "Informationsarkitektur I"},
+				{title: "Objektorienterad programmering med Python"},
+				{divider: "full"},
+				{subtitle: "Lärosäte"},
+				{paragraph: "Malmö Universitet"},
+				{subtitle: "Högskolepoäng"},
+				{paragraph: "7.5"}
+			]
+		},
+
+		{
+			section: "Pågående",
+			content: [
+				{title: "Webbtjänster"},
+				{divider: "full"},
+				{subtitle: "Lärosäte"},
+				{paragraph: "Malmö Universitet"},
+				{subtitle: "Högskolepoäng"},
+				{paragraph: "7.5"}
+			]
+		},
+
+		{
+			section: "Pågående",
+			content: [
+				{title: "Informationsarkitektur II"},
 				{divider: "full"},
 				{subtitle: "Lärosäte"},
 				{paragraph: "Malmö Universitet"},
@@ -651,6 +699,22 @@ const storage = {
 		{
 			section: "Arbetslivserfarenhet",
 			content: [
+				{title: "HiQ Skåne AB"},
+				{divider: "full"},
+				{subtitle: "Position"},
+				{paragraph: "Fullstack developer"},
+				{subtitle: "Arbetsuppgifter"},
+				{paragraph: "Främst frontend-utveckling med bland annat TypeScript, ReactJS och Redux. Även en del backend med .NET."},
+				{subtitle: "Plats"},
+				{paragraph: "Malmö"},
+				{subtitle: "Period"},
+				{paragraph: "Pågående från juli 2018"}
+			]
+		},
+
+		{
+			section: "Arbetslivserfarenhet",
+			content: [
 				{title: "Trialbee AB"},
         {divider: "full"},
 				{subtitle: "Position"},
@@ -660,7 +724,7 @@ const storage = {
 				{subtitle: "Plats"},
 				{paragraph: "Malmö"},
 				{subtitle: "Period"},
-				{paragraph: "Pågående från 2018"}
+				{paragraph: "December 2017 till mars 2018"}
 			]
 		},
 
@@ -676,7 +740,7 @@ const storage = {
 				{subtitle: "Plats"},
 				{paragraph: "Malmö"},
 				{subtitle: "Period"},
-				{paragraph: "Pågående från 2018"}
+				{paragraph: "Februari 2018 till juni 2018"}
 			]
 		},
 
@@ -692,7 +756,7 @@ const storage = {
 				{subtitle: "Plats"},
 				{paragraph: "Malmö"},
 				{subtitle: "Period"},
-				{paragraph: "Pågående från 2018"}
+				{paragraph: "Februari 2018 till juni 2018"}
 			]
 		},
 
@@ -708,7 +772,7 @@ const storage = {
 				{subtitle: "Plats"},
 				{paragraph: "Halmstad"},
 				{subtitle: "Period"},
-				{paragraph: "2015 till 2016"}
+				{paragraph: "Juli 2015 till augusti 2016"}
 			]
 		},
 
@@ -722,7 +786,7 @@ const storage = {
 				{subtitle: "Plats"},
 				{paragraph: "Malmö, Lund, Trelleborg"},
 				{subtitle: "Period"},
-				{paragraph: "2013 till 2014"}
+				{paragraph: "September 2013 till april 2014"}
 			]
 		},
 
@@ -736,7 +800,7 @@ const storage = {
 				{subtitle: "Plats"},
 				{paragraph: "Malmö, Ystad, Trelleborg"},
 				{subtitle: "Period"},
-				{paragraph: "2012 till 2014"}
+				{paragraph: "Maj 2012 till februari 2014"}
 			]
 		},
 
@@ -750,7 +814,7 @@ const storage = {
 				{subtitle: "Plats"},
 				{paragraph: "Mossby"},
 				{subtitle: "Period"},
-				{paragraph: "2005 till 2014"}
+				{paragraph: "Maj 2005 till augusti 2014"}
 			]
 		},
 
@@ -764,7 +828,7 @@ const storage = {
 				{subtitle: "Plats"},
 				{paragraph: "Malmö"},
 				{subtitle: "Period"},
-				{paragraph: "2011"}
+				{paragraph: "Februari 2011 till mars 2011"}
 			]
 		},
 
