@@ -52,7 +52,7 @@ const storage = {
       content: [
         {title: "Om denna webbapplikationen"},
         {divider: "full"},
-				{paragraph: "Applikationen på domänen www.stefangeneralao.fyi är skriven av mig. Som verktyg valde jag ReactJS för klientsidan och servern är på en Raspberry PI med Debian."},
+				{paragraph: "Applikationen på domänen www.stefangeneralao.com är skriven av mig. Som verktyg valde jag ReactJS för klientsidan och servern är på en Raspberry PI med Debian."},
 				{paragraph: "Gå gärna in och kolla på min Github. Upptäcker ni buggar, andra problem eller har synpunkter? Skicka gärna in en issue eller pull-request!"},
         {link: "https://github.com/stefangeneralao/stefan-generalao-cv"}
       ]
@@ -646,7 +646,7 @@ const storage = {
 				{subtitle: "Kunnighet"},
 				{progressbar: 60},
 				{subtitle: "Detaljer"},
-				{paragraph: "Denna applikationen (www.stefangeneralao.fyi) körs på en maskin med Debian. Jag navigerar bekvämt i terminalen och har bra översikt över UNIX."}
+				{paragraph: "Denna applikationen (www.stefangeneralao.com) körs på en maskin med Debian. Jag navigerar bekvämt i terminalen och har bra översikt över UNIX."}
 			]
 		},
 
