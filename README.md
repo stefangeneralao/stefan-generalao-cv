@@ -18,7 +18,7 @@ Clone this repository.
 
 <code>yarn global add serve</code> adds the serve module.
 
-<code>serve -s build</code> deploys the build-server.
+<code>yarn serve -s build</code> deploys the build-server.
 
 ## Are you interested in working with me?
 Don't hesitate to send me a message.
