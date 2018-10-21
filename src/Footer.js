@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 
 class Footer extends Component {
   render() {
-		let className = "Footer ";
-		className += this.props.getDrawerState() ? "drawer-open" : "";
+    let className = "Footer ";
+    className += this.props.getDrawerState() ? "drawer-open" : "";
 
     return (
       <footer className={className}>

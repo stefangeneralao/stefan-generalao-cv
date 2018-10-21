@@ -15,13 +15,13 @@ h3 {
   color: white;
   position: fixed;
   height: 160px;
-	top: 0;
-	right: 0;
-	left: 300px;
+  top: 0;
+  right: 0;
+  left: 300px;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
   z-index: 4;
-	filter: none;
-	transition: height 200ms, filter 500ms;
+  filter: none;
+  transition: height 200ms, filter 500ms;
 }
 
 .Header > .menu-icon {
@@ -29,33 +29,33 @@ h3 {
 }
 
 .Header > h1 {
-	height: 50px;
-	line-height: 50px;
+  height: 50px;
+  line-height: 50px;
   padding-left: 105px;
-  font-size: 2.5em;
+  font-size: 2.5rem;
   margin-top: 60px;
-	white-space: nowrap;
-	transition: 200ms;
+  white-space: nowrap;
+  transition: 200ms;
 }
 
 .Header.small {
-	filter: none;
-	height: 60px;
-	transition: height 150ms, filter 500ms;
+  filter: none;
+  height: 60px;
+  transition: height 150ms, filter 500ms;
 }
 
 .Header.small h1 {
-	height: 0;
-	line-height: 25px;
-	font-size: 1.2rem;
-	padding-left: 50px;
-	margin-top: 20px;
-	transition: 150ms;
+  /* height: 50px; */
+  line-height: 25px;
+  font-size: 1.2rem;
+  padding-left: 50px;
+  margin-top: 20px;
+  transition: 150ms;
 }
 
 .Footer {
-	background-color: #444;
-	color: #ddd;
+  background-color: #444;
+  color: #ddd;
   position: fixed;
   height: 160px;
   bottom: 0;
@@ -66,13 +66,13 @@ h3 {
   padding-left: 105px;
   font-size: 0.85rem;
   z-index: 2;
-	filter: none;
-	transition: filter 150ms;
+  filter: none;
+  transition: filter 150ms;
 }
 
 .Footer a {
-	text-decoration: none;
-	color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 .Body {
@@ -80,12 +80,12 @@ h3 {
   position: relative;
   padding-left: 300px;
   padding-top: 160px;
-	padding-bottom: 30px;
+  padding-bottom: 30px;
   margin-bottom: 160px;
   z-index: 3;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
-	filter: none;
-	transition: 500ms;
+  filter: none;
+  transition: 500ms;
 }
 
 .Body a {
@@ -106,11 +106,11 @@ h3 {
   line-height: 26px;
   margin-top: 10px;
   margin-bottom: 20px;
-	text-align: justify;
+  text-align: justify;
 }
 
 .Card h2 {
-	font-size: 1.7rem;
+  font-size: 1.7rem;
 }
 
 .Drawer {
@@ -128,7 +128,7 @@ h3 {
 }
 
 .Drawer.open {
-	left: 0;
+  left: 0;
 }
 
 ul {
@@ -142,14 +142,14 @@ li {
   font-weight: 600;
   transition: 400ms;
   white-space: nowrap;
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .section-list-item-icon {
-	width: 18px;
-	position: relative;
-	top: 5px;
-	padding-right: 20px;
+  width: 18px;
+  position: relative;
+  top: 5px;
+  padding-right: 20px;
 }
 
 .section-list-item {
@@ -192,23 +192,23 @@ li {
 }
 
 .noselect {
-	/* iOS Safari */
+  /* iOS Safari */
   -webkit-touch-callout: none;
 
-	/* Safari */
+  /* Safari */
   -webkit-user-select: none;
 
-	/* Konqueror HTML */
+  /* Konqueror HTML */
   -khtml-user-select: none;
 
-	/* Firefox */
+  /* Firefox */
   -moz-user-select: none;
 
-	/* Internet Explorer/Edge */
+  /* Internet Explorer/Edge */
   -ms-user-select: none;
 
-	/* Non-prefixed version, currently
-	supported by Chrome and Opera */
+  /* Non-prefixed version, currently
+  supported by Chrome and Opera */
   user-select: none;
 }
 
@@ -227,8 +227,8 @@ li {
 }
 
 .drawer-banner-wrapper > .profile-image {
-	height: auto;
-	width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 ::-webkit-scrollbar {
@@ -254,21 +254,21 @@ li {
     margin-top: 65px;
     margin-left: 45px;
     display: initial;
-		transition: 200ms;
+    transition: 200ms;
   }
-	.Header.small h1{
-		padding-left: 55px;
-	}
+  .Header.small h1{
+    padding-left: 55px;
+  }
   .Header.small .menu-icon {
     width: 30px;
     margin-top: 16px;
     margin-left: 20px;
-		transition: 150ms;
+    transition: 150ms;
   }
-	.Header.drawer-open, .Body.drawer-open, .Footer.drawer-open {
-		transition: 300ms;
-		filter: brightness(0.5) grayscale(100%);
-	}
+  .Header.drawer-open, .Body.drawer-open, .Footer.drawer-open {
+    transition: 300ms;
+    filter: brightness(0.5) grayscale(100%);
+  }
 }
 
 /* Mobile */
@@ -276,7 +276,7 @@ li {
   .Body {
     padding-left: 0;
     padding-right: 0;
-		padding-top: 60px;
+    padding-top: 60px;
   }
   .Card {
     margin: 15px 5px;
@@ -285,31 +285,36 @@ li {
   }
   .Card h2 {
     text-align: center;
-		word-wrap: break-word;
+    word-wrap: break-word;
   }
-	.Card p{
-		word-wrap: break-word;
+  .Card p{
+    word-wrap: break-word;
     text-align: left;
-	}
+  }
   .Footer {
     text-align: center;
     padding-left: 0;
   }
-  .Header h1 {
-    font-size: 1.2rem;
-    padding-left: 55px;
-    margin-top: 19px;
-  }
-	.Header {
-		height: 60px;
-	}
   .Header>.menu-icon {
     width: 30px;
-    margin-top: 15px;
+    margin-top: 16px;
     margin-left: 20px;
   }
-	.Header.drawer-open, .Body.drawer-open, .Footer.drawer-open {
-		transition: 300ms;
-		filter: brightness(0.5) grayscale(100%);
-	}
+  .Header {
+    filter: none;
+    height: 60px;
+    transition: height 150ms, filter 500ms;
+  }
+  .Header h1 {
+    /* height: 50px; */
+    line-height: 25px;
+    font-size: 1.2rem;
+    padding-left: 55px;
+    margin-top: 20px;
+    transition: 150ms;
+  }
+  .Header.drawer-open, .Body.drawer-open, .Footer.drawer-open {
+    transition: 300ms;
+    filter: brightness(0.5) grayscale(100%);
+  }
 }

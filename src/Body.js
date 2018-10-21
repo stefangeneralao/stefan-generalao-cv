@@ -2,9 +2,9 @@ import React, {Component} from 'react';
 import Card from './Card.js';
 
 class Body extends Component {
-	onClickHandler() {
-		this.props.closeDrawer();
-	}
+  onClickHandler() {
+    this.props.closeDrawer();
+  }
 
   createContent() {
     const cards = [];
@@ -22,8 +22,8 @@ class Body extends Component {
   }
 
   render() {
-		let className = "Body ";
-		className += this.props.getDrawerState() ? "drawer-open" : "";
+    let className = "Body ";
+    className += this.props.getDrawerState() ? "drawer-open" : "";
 
     return (
       <main id="Body" className={className} onClick={() => {this.onClickHandler()}}>

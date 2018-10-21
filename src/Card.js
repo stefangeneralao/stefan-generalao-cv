@@ -24,19 +24,19 @@ class Card extends Component {
           result = (<p>{itemValue}</p>)
           break;
 
-				case 'progressbar':
-					result = (
-						<div className="progressbar">
-							<div className="progress" style={{width: itemValue + "%"}}/>
-						</div>
-					)
-					break;
+        case 'progressbar':
+          result = (
+            <div className="progressbar">
+              <div className="progress" style={{width: itemValue + "%"}}/>
+            </div>
+          )
+          break;
 
-				case 'link':
-					result = (
-						<a href={itemValue} target="blank"><p>{itemValue}</p></a>
-					)
-					break;
+        case 'link':
+          result = (
+            <a href={itemValue} target="blank"><p>{itemValue}</p></a>
+          )
+          break;
 
         default:
           result = (<p>{itemValue}</p>)
