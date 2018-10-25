@@ -17,7 +17,7 @@ const storage = {
         {id: "Webbteknologier"},
         {id: "Maskininlärning"},
         {id: "IoT"},
-        {id: "3D-printing och design"},
+        {id: "3D-printing och Design"},
         {id: "Systemutveckling"},
         {id: "Övrigt"},
       ]
@@ -33,14 +33,14 @@ const storage = {
       content: [
         {title: "Stefan Generalao"},
         {divider: "full"},
-        {subtitle: "Om mig"},
-        {paragraph: "Jag studerar just nu på Informationsarkitektprogrammet i Malmö. Jag är ambitiös, har en hög arbetsmoral och anser mig ha tillräckligt med tid över för en deltidsanställning. Studierna just nu ger mig en stor inblick i den senaste forskningen och nätverket som studierna erbjuder är ovärderligt."},
+        {subtitle: "Om me"},
+        {paragraph: "Jag studerar just nu på Informationsarkitektprogrammet i Malmö. Jag är ambitiös och har en hög arbetsmoral. Studierna ger mig en inblick i den senaste forskningen och nätverket som studierna erbjuder är ovärderligt."},
 
         {paragraph: "Innan jag påbörjade studierna i Malmö hade jag avslutat flera högskolekurser inom inbyggda system samt genomfört omkring 500 timmar hårdvaruprogrammering i Arduino. Jag har även varit aktiv i Halmstad Högskolas entreprenörskapsinkubator där jag var involverad i två större IT-projekt."},
 
         {paragraph: "Jag drivs av min nyfikenhet, vilket gör mig snabblärd och involverad och trots att en tidigare chef beskrev mig som ansvarsfull i soloprojekt är det i team jag föredrar att arbeta."},
 
-        {paragraph: "Maskininlärning är ett stort intresse. På min fritid håller jag mig uppdaterad med de senaste studierna inom olika fält kring maskininlärning och då speciellt Deep Learning. Parallellt med detta läser jag också en distanskurs på Udemy i samma ämne. Webbteknologier som NodeJS och ReactJS är tycker jag också är spännande. Jag brinner för nya system!"},
+        {paragraph: "Min hemmaplan är i webbteknologier som ReactJS, NodeJS och allt som tillhör.Maskininlärning ligger mig också nära hjärtat. På min fritid håller jag mig uppdaterad med de senaste studierna inom olika fält kring maskininlärning och då speciellt Deep Learning. Parallellt med studier och arbete läser jag också en distanskurs på Udemy i samma ämne. Jag brinner för nya teknologier!"},
 
         {paragraph: "Navigationen finner ni till vänster. Välkommen hit!"},
         {paragraph: "Stefan Generalao"}
@@ -52,7 +52,7 @@ const storage = {
       content: [
         {title: "Om denna webbapplikationen"},
         {divider: "full"},
-        {paragraph: "Applikationen på domänen www.stefangeneralao.com är skriven av mig. Som verktyg valde jag ReactJS för klientsidan och servern är på en Raspberry PI med Debian."},
+        {paragraph: "Applikationen på domänen www.stefangeneralao.com är skriven av mig. Som verktyg valde jag ReactJS och servern är på en Raspberry PI med Debian."},
         {paragraph: "Gå gärna in och kolla på min Github. Upptäcker ni buggar, andra problem eller har synpunkter? Skicka gärna in en issue eller pull-request!"},
         {link: "https://github.com/stefangeneralao/stefan-generalao-cv"}
       ]
@@ -63,7 +63,7 @@ const storage = {
       content: [
         {title: "Sammanfattning"},
         {divider: "full"},
-        {paragraph: "Kurser på totalt 88.5 högskolepoäng som omfattar delar inom inbyggda system, datavetenskap och informationsvetenskap."}
+        {paragraph: "Kurser på totalt 111,0 högskolepoäng som omfattar delar inom inbyggda system, datavetenskap och informationsvetenskap."}
       ]
     },
 
@@ -75,19 +75,19 @@ const storage = {
         {subtitle: "Lärosäte"},
         {paragraph: "Malmö Universitet"},
         {subtitle: "Högskolepoäng"},
-        {paragraph: "7.5"}
+        {paragraph: "7,5"}
       ]
     },
 
     {
       section: "Avslutad",
       content: [
-        {title: "Systemutveckling och Projekt I"},
+        {title: "System Engineering och Projekt I"},
         {divider: "full"},
         {subtitle: "Lärosäte"},
         {paragraph: "Malmö Universitet"},
         {subtitle: "Högskolepoäng"},
-        {paragraph: "15.0"}
+        {paragraph: "15,0"}
       ]
     },
 
@@ -99,7 +99,7 @@ const storage = {
         {subtitle: "Lärosäte"},
         {paragraph: "Malmö Universitet"},
         {subtitle: "Högskolepoäng"},
-        {paragraph: "7.5"}
+        {paragraph: "7,5"}
       ]
     },
 
@@ -111,7 +111,7 @@ const storage = {
         {subtitle: "Lärosäte"},
         {paragraph: "Malmö Universitet"},
         {subtitle: "Högskolepoäng"},
-        {paragraph: "7.5"}
+        {paragraph: "7,5"}
       ]
     },
 
@@ -123,7 +123,7 @@ const storage = {
         {subtitle: "Lärosäte"},
         {paragraph: "Malmö Universitet"},
         {subtitle: "Högskolepoäng"},
-        {paragraph: "7.5"}
+        {paragraph: "7,5"}
       ]
     },
 
@@ -135,7 +135,7 @@ const storage = {
         {subtitle: "Lärosäte"},
         {paragraph: "Malmö Universitet"},
         {subtitle: "Högskolepoäng"},
-        {paragraph: "7.5"}
+        {paragraph: "7,5"}
       ]
     },
 
@@ -147,7 +147,7 @@ const storage = {
         {subtitle: "Lärosäte"},
         {paragraph: "Malmö Universitet"},
         {subtitle: "Högskolepoäng"},
-        {paragraph: "7.5"}
+        {paragraph: "7,5"}
       ]
     },
 
@@ -159,7 +159,7 @@ const storage = {
         {subtitle: "Lärosäte"},
         {paragraph: "Malmö Universitet"},
         {subtitle: "Högskolepoäng"},
-        {paragraph: "7.5"},
+        {paragraph: "7,5"},
         // {subtitle: "Godkänt datum"},
         // {paragraph: "160611"}
       ]
@@ -173,7 +173,7 @@ const storage = {
         {subtitle: "Lärosäte"},
         {paragraph: "Högskolan i Halmstad"},
         {subtitle: "Högskolepoäng"},
-        {paragraph: "7.5"},
+        {paragraph: "7,5"},
         // {subtitle: "Godkänt datum"},
         // {paragraph: "151008"}
       ]
@@ -187,7 +187,7 @@ const storage = {
         {subtitle: "Lärosäte"},
         {paragraph: "Högskolan i Halmstad"},
         {subtitle: "Högskolepoäng"},
-        {paragraph: "7.5"},
+        {paragraph: "7,5"},
         // {subtitle: "Godkänt datum"},
         // {paragraph: "150616"}
       ]
@@ -201,7 +201,7 @@ const storage = {
         {subtitle: "Lärosäte"},
         {paragraph: "Högskolan i Halmstad"},
         {subtitle: "Högskolepoäng"},
-        {paragraph: "7.5"},
+        {paragraph: "7,5"},
         // {subtitle: "Godkänt datum"},
         // {paragraph: "150422"}
       ]
@@ -215,7 +215,7 @@ const storage = {
         {subtitle: "Lärosäte"},
         {paragraph: "Högskolan i Halmstad"},
         {subtitle: "Högskolepoäng"},
-        {paragraph: "7.5"},
+        {paragraph: "7,5"},
         // {subtitle: "Godkänt datum"},
         // {paragraph: "150130"}
       ]
@@ -229,7 +229,7 @@ const storage = {
         {subtitle: "Lärosäte"},
         {paragraph: "Högskolan i Halmstad"},
         {subtitle: "Högskolepoäng"},
-        {paragraph: "6.0"},
+        {paragraph: "6,0"},
         // {subtitle: "Godkänt datum"},
         // {paragraph: "150117"}
       ]
@@ -243,7 +243,7 @@ const storage = {
         {subtitle: "Lärosäte"},
         {paragraph: "Högskolan i Halmstad"},
         {subtitle: "Högskolepoäng"},
-        {paragraph: "7.5"},
+        {paragraph: "7,5"},
         // {subtitle: "Godkänt datum"},
         // {paragraph: "141119"}
       ]
@@ -266,7 +266,7 @@ const storage = {
         {subtitle: "Lärosäte"},
         {paragraph: "Malmö Universitet"},
         {subtitle: "Högskolepoäng"},
-        {paragraph: "7.5"}
+        {paragraph: "7,5"}
       ]
     },
 
@@ -278,7 +278,7 @@ const storage = {
         {subtitle: "Lärosäte"},
         {paragraph: "Malmö Universitet"},
         {subtitle: "Högskolepoäng"},
-        {paragraph: "7.5"}
+        {paragraph: "7,5"}
       ]
     },
 
@@ -290,19 +290,7 @@ const storage = {
         {subtitle: "Lärosäte"},
         {paragraph: "Malmö Universitet"},
         {subtitle: "Högskolepoäng"},
-        {paragraph: "7.5"}
-      ]
-    },
-
-    {
-      section: "Pågående",
-      content: [
-        {title: "Informationsarkitektur II"},
-        {divider: "full"},
-        {subtitle: "Lärosäte"},
-        {paragraph: "Malmö Universitet"},
-        {subtitle: "Högskolepoäng"},
-        {paragraph: "7.5"}
+        {paragraph: "7,5"}
       ]
     },
 
@@ -546,7 +534,7 @@ const storage = {
     },
 
     {
-      section: "3D-printing och design",
+      section: "3D-printing och Design",
       content: [
         {title: "3D-printing"},
         {divider: "full"},
@@ -558,7 +546,7 @@ const storage = {
     },
 
     {
-      section: "3D-printing och design",
+      section: "3D-printing och Design",
       content: [
         {title: "Simplify3D"},
         {divider: "full"},
@@ -570,7 +558,7 @@ const storage = {
     },
 
     {
-      section: "3D-printing och design",
+      section: "3D-printing och Design",
       content: [
         {title: "CAD"},
         {divider: "full"},
@@ -586,7 +574,7 @@ const storage = {
     // 	content: [
     // 		{title: "Sammanfattning"},
     // 		{divider: "full"},
-    // 		{paragraph: "Här nämner jag diverse systemutvecklingsverktyg som jag använt. Jag räknar med att denna listan kommer växa i en stadig takt."}
+    // 		{paragraph: "Här nämner jag diverse system Engineeringsverktyg som jag använt. Jag räknar med att denna listan kommer växa i en stadig takt."}
     // 	]
     // },
 
@@ -610,7 +598,7 @@ const storage = {
         {subtitle: "Kunnighet"},
         {progressbar: 50},
         {subtitle: "Detaljer"},
-        {paragraph: "I kursen \"Systemutveckling och projekt\" använde vi YouTrack för att logga issues, tidsestimering och etc."}
+        {paragraph: "I kursen \"System Engineering och projekt\" använde vi YouTrack för att logga issues, tidsestimering och etc."}
       ]
     },
 
@@ -708,7 +696,7 @@ const storage = {
         {subtitle: "Plats"},
         {paragraph: "Malmö"},
         {subtitle: "Period"},
-        {paragraph: "Pågående från juli 2018"}
+        {paragraph: "Ongoing från juli 2018"}
       ]
     },
 
@@ -858,7 +846,7 @@ const storage = {
     {
       section: "Projekt",
       content: [
-        {title: "WhatRemote 2 (pågående)"},
+        {title: "WhatRemote 2 (Ongoing)"},
         {divider: "full"},
         {subtitle: "Detaljer om projektet"},
         {paragraph: "I den uppdaterade versionen av mitt smarta hem är koden inte längre skriven i C++, hela utvecklingsstacken har ersatts av JavaScript. Anledningen är kraftfulla nätverksteknologier, grafiska gränssnitt och för att jag älskar JavaScript. Hårdvaran får också en uppgradering från ATMega328 till Raspberry Pi."},
@@ -882,10 +870,10 @@ const storage = {
     {
       section: "Projekt",
       content: [
-        {title: "Eventizer (pågående)"},
+        {title: "Eventizer (Ongoing)"},
         {divider: "full"},
         {subtitle: "Detaljer om projektet"},
-        {paragraph: "Projektarbete till kursen \"Systemutveckling och projekt\". Projektets mål är att under utställningsdagen presentera andra studenters projekt med vår webbapplikation. Webbapplikationens klientsida är skriven i ReactJS och serversida i NodeJS. I projektet prioriteras scrum och dokumentation."},
+        {paragraph: "Projektarbete till kursen \"System Engineering och projekt\". Projektets mål är att under utställningsdagen presentera andra studenters projekt med vår webbapplikation. Webbapplikationens klientsida är skriven i ReactJS och serversida i NodeJS. I projektet prioriteras scrum och dokumentation."},
         {subtitle: "Länk"},
         {link: "https://github.com/stefangeneralao/eventizer"}
       ]
@@ -921,7 +909,7 @@ const storage = {
         {title: "Svenska"},
         {divider: "full"},
         {subtitle: "Nivå"},
-        {paragraph: "Modersmål"}
+        {paragraph: "Native"}
       ]
     },
 
@@ -931,7 +919,7 @@ const storage = {
         {title: "Engelska"},
         {divider: "full"},
         {subtitle: "Nivå"},
-        {paragraph: "Flytande"}
+        {paragraph: "Fluent"}
       ]
     },
 
@@ -941,7 +929,7 @@ const storage = {
         {title: "Tyska"},
         {divider: "full"},
         {subtitle: "Nivå"},
-        {paragraph: "Goda kunskaper"}
+        {paragraph: "Novice"}
       ]
     },
 
@@ -951,7 +939,7 @@ const storage = {
         {title: "Cebuano"},
         {divider: "full"},
         {subtitle: "Nivå"},
-        {paragraph: "Vissa kunskaper"}
+        {paragraph: "Novice"}
       ]
     }
   ]
