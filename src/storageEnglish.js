@@ -5,26 +5,26 @@ const storage = {
       icon: "playArrow"
     },
     {
-      id: "Utbildning",
+      id: "Education",
       subSections: [
-        {id: "Avslutad"},
-        {id: "Pågående"},
+        {id: "Completed"},
+        {id: "Ongoing"},
       ]
     },
     {
-      id: "Färdigheter",
+      id: "Skills",
       subSections: [
-        {id: "Webbteknologier"},
-        {id: "Maskininlärning"},
+        {id: "Web Technologies"},
+        {id: "Machine Learning"},
         {id: "IoT"},
-        {id: "3D-printing och Design"},
-        {id: "Systemutveckling"},
-        {id: "Övrigt"},
+        {id: "3D-printing and Design"},
+        {id: "System Engineering"},
+        {id: "Other"},
       ]
     },
-    {id: "Projekt"},
-    {id: "Arbetslivserfarenhet"},
-    {id: "Språk"},
+    {id: "Projects"},
+    {id: "Experience"},
+    {id: "Language"},
   ],
 
   cards: [
@@ -33,14 +33,14 @@ const storage = {
       content: [
         {title: "Stefan Generalao"},
         {divider: "full"},
-        {subtitle: "Om mig"},
+        {subtitle: "About me"},
         {paragraph: "Jag studerar just nu på Informationsarkitektprogrammet i Malmö. Jag är ambitiös och har en hög arbetsmoral. Studierna ger mig en inblick i den senaste forskningen och nätverket som studierna erbjuder är ovärderligt."},
 
         {paragraph: "Innan jag påbörjade studierna i Malmö hade jag avslutat flera högskolekurser inom inbyggda system samt genomfört omkring 500 timmar hårdvaruprogrammering i Arduino. Jag har även varit aktiv i Halmstad Högskolas entreprenörskapsinkubator där jag var involverad i två större IT-projekt."},
 
         {paragraph: "Jag drivs av min nyfikenhet, vilket gör mig snabblärd och involverad och trots att en tidigare chef beskrev mig som ansvarsfull i soloprojekt är det i team jag föredrar att arbeta."},
 
-        {paragraph: "Min hemmaplan är i webbteknologier som ReactJS, NodeJS och allt som tillhör. Maskininlärning ligger mig också nära hjärtat. På min fritid håller jag mig uppdaterad med de senaste studierna inom olika fält kring maskininlärning och då speciellt Deep Learning. Parallellt med studier och arbete läser jag också en distanskurs på Udemy i samma ämne. Jag brinner för nya teknologier!"},
+        {paragraph: "Min hemmaplan är i webbteknologier som ReactJS, NodeJS och allt som tillhör.Maskininlärning ligger mig också nära hjärtat. På min fritid håller jag mig uppdaterad med de senaste studierna inom olika fält kring maskininlärning och då speciellt Deep Learning. Parallellt med studier och arbete läser jag också en distanskurs på Udemy i samma ämne. Jag brinner för nya teknologier!"},
 
         {paragraph: "Navigationen finner ni till vänster. Välkommen hit!"},
         {paragraph: "Stefan Generalao"}
@@ -59,7 +59,7 @@ const storage = {
     },
 
     {
-      section: "Avslutad",
+      section: "Completed",
       content: [
         {title: "Sammanfattning"},
         {divider: "full"},
@@ -68,7 +68,7 @@ const storage = {
     },
 
     {
-      section: "Avslutad",
+      section: "Completed",
       content: [
         {title: "Informationsarkitektur I"},
         {divider: "full"},
@@ -80,9 +80,9 @@ const storage = {
     },
 
     {
-      section: "Avslutad",
+      section: "Completed",
       content: [
-        {title: "Systemutveckling och Projekt I"},
+        {title: "System Engineering och Projekt I"},
         {divider: "full"},
         {subtitle: "Lärosäte"},
         {paragraph: "Malmö Universitet"},
@@ -92,7 +92,7 @@ const storage = {
     },
 
     {
-      section: "Avslutad",
+      section: "Completed",
       content: [
         {title: "Databasteknik"},
         {divider: "full"},
@@ -104,7 +104,7 @@ const storage = {
     },
 
     {
-      section: "Avslutad",
+      section: "Completed",
       content: [
         {title: "Introduktion till programmering (Python)"},
         {divider: "full"},
@@ -116,7 +116,7 @@ const storage = {
     },
 
     {
-      section: "Avslutad",
+      section: "Completed",
       content: [
         {title: "Introduktion till interaktionsdesign"},
         {divider: "full"},
@@ -128,7 +128,7 @@ const storage = {
     },
 
     {
-      section: "Avslutad",
+      section: "Completed",
       content: [
         {title: "Introduktion till webbutveckling"},
         {divider: "full"},
@@ -140,7 +140,7 @@ const storage = {
     },
 
     {
-      section: "Avslutad",
+      section: "Completed",
       content: [
         {title: "Introduktion till datavetenskap"},
         {divider: "full"},
@@ -152,7 +152,7 @@ const storage = {
     },
 
     {
-      section: "Avslutad",
+      section: "Completed",
       content: [
         {title: "Programmering med Java, del II"},
         {divider: "full"},
@@ -166,7 +166,7 @@ const storage = {
     },
 
     {
-      section: "Avslutad",
+      section: "Completed",
       content: [
         {title: "Algoritmer och datastrukturer"},
         {divider: "full"},
@@ -180,7 +180,7 @@ const storage = {
     },
 
     {
-      section: "Avslutad",
+      section: "Completed",
       content: [
         {title: "Datorteknik"},
         {divider: "full"},
@@ -194,7 +194,7 @@ const storage = {
     },
 
     {
-      section: "Avslutad",
+      section: "Completed",
       content: [
         {title: "Digitalteknik"},
         {divider: "full"},
@@ -208,7 +208,7 @@ const storage = {
     },
 
     {
-      section: "Avslutad",
+      section: "Completed",
       content: [
         {title: "Perspektiv på elektroteknik"},
         {divider: "full"},
@@ -222,7 +222,7 @@ const storage = {
     },
 
     {
-      section: "Avslutad",
+      section: "Completed",
       content: [
         {title: "Envariabelanalys"},
         {divider: "full"},
@@ -236,7 +236,7 @@ const storage = {
     },
 
     {
-      section: "Avslutad",
+      section: "Completed",
       content: [
         {title: "Programmering med Java"},
         {divider: "full"},
@@ -250,7 +250,7 @@ const storage = {
     },
 
     {
-      section: "Pågående",
+      section: "Ongoing",
       content: [
         {title: "Sammanfattning"},
         {divider: "full"},
@@ -259,7 +259,7 @@ const storage = {
     },
 
     {
-      section: "Pågående",
+      section: "Ongoing",
       content: [
         {title: "Informationsarkitektur II"},
         {divider: "full"},
@@ -271,7 +271,7 @@ const storage = {
     },
 
     {
-      section: "Pågående",
+      section: "Ongoing",
       content: [
         {title: "Objektorienterad programmering med Python"},
         {divider: "full"},
@@ -283,7 +283,7 @@ const storage = {
     },
 
     {
-      section: "Pågående",
+      section: "Ongoing",
       content: [
         {title: "Webbtjänster"},
         {divider: "full"},
@@ -295,7 +295,7 @@ const storage = {
     },
 
     {
-      section: "Pågående",
+      section: "Ongoing",
       content: [
         {title: "Deep Learning A-Z™: Hands-On Artificial Neural Networks"},
         {divider: "full"},
@@ -305,7 +305,7 @@ const storage = {
     },
 
     {
-      section: "Webbteknologier",
+      section: "Web Technologies",
       content: [
         {title: "HTML, CSS, Vanilla JavaScript"},
         {divider: "full"},
@@ -317,7 +317,7 @@ const storage = {
     },
 
     {
-      section: "Webbteknologier",
+      section: "Web Technologies",
       content: [
         {title: "ReactJS"},
         {divider: "full"},
@@ -329,7 +329,7 @@ const storage = {
     },
 
     {
-      section: "Webbteknologier",
+      section: "Web Technologies",
       content: [
         {title: "P5.js"},
         {divider: "full"},
@@ -341,7 +341,7 @@ const storage = {
     },
 
     {
-      section: "Webbteknologier",
+      section: "Web Technologies",
       content: [
         {title: "NodeJS"},
         {divider: "full"},
@@ -353,7 +353,7 @@ const storage = {
     },
 
     {
-      section: "Webbteknologier",
+      section: "Web Technologies",
       content: [
         {title: "socket.io"},
         {divider: "full"},
@@ -365,7 +365,7 @@ const storage = {
     },
 
     {
-      section: "Webbteknologier",
+      section: "Web Technologies",
       content: [
         {title: "React Redux DOM"},
         {divider: "full"},
@@ -377,7 +377,7 @@ const storage = {
     },
 
     {
-      section: "Webbteknologier",
+      section: "Web Technologies",
       content: [
         {title: "Axios"},
         {divider: "full"},
@@ -389,7 +389,7 @@ const storage = {
     },
 
     {
-      section: "Webbteknologier",
+      section: "Web Technologies",
       content: [
         {title: "ExpressJS"},
         {divider: "full"},
@@ -401,7 +401,7 @@ const storage = {
     },
 
     {
-      section: "Webbteknologier",
+      section: "Web Technologies",
       content: [
         {title: "Firebase"},
         {divider: "full"},
@@ -413,7 +413,7 @@ const storage = {
     },
 
     {
-      section: "Webbteknologier",
+      section: "Web Technologies",
       content: [
         {title: "GraphQL"},
         {divider: "full"},
@@ -425,7 +425,7 @@ const storage = {
     },
 
     // {
-    // 	section: "Maskininlärning",
+    // 	section: "Machine Learning",
     // 	content: [
     // 		{title: "Sammanfattning"},
     //     {divider: "full"},
@@ -434,7 +434,7 @@ const storage = {
     // },
 
     {
-      section: "Maskininlärning",
+      section: "Machine Learning",
       content: [
         {title: "Keras"},
         {divider: "full"},
@@ -449,7 +449,7 @@ const storage = {
     },
 
     {
-      section: "Maskininlärning",
+      section: "Machine Learning",
       content: [
         {title: "TensorFlow"},
         {divider: "full"},
@@ -461,7 +461,7 @@ const storage = {
     },
 
     {
-      section: "Maskininlärning",
+      section: "Machine Learning",
       content: [
         {title: "Synapse.js"},
         {divider: "full"},
@@ -534,7 +534,7 @@ const storage = {
     },
 
     {
-      section: "3D-printing och Design",
+      section: "3D-printing and Design",
       content: [
         {title: "3D-printing"},
         {divider: "full"},
@@ -546,7 +546,7 @@ const storage = {
     },
 
     {
-      section: "3D-printing och Design",
+      section: "3D-printing and Design",
       content: [
         {title: "Simplify3D"},
         {divider: "full"},
@@ -558,7 +558,7 @@ const storage = {
     },
 
     {
-      section: "3D-printing och Design",
+      section: "3D-printing and Design",
       content: [
         {title: "CAD"},
         {divider: "full"},
@@ -570,7 +570,7 @@ const storage = {
     },
 
     // {
-    // 	section: "Systemutveckling",
+    // 	section: "System Engineering",
     // 	content: [
     // 		{title: "Sammanfattning"},
     // 		{divider: "full"},
@@ -579,7 +579,7 @@ const storage = {
     // },
 
     {
-      section: "Systemutveckling",
+      section: "System Engineering",
       content: [
         {title: "Git/Github"},
         {divider: "full"},
@@ -591,19 +591,19 @@ const storage = {
     },
 
     {
-      section: "Systemutveckling",
+      section: "System Engineering",
       content: [
         {title: "JetBrain YouTrack"},
         {divider: "full"},
         {subtitle: "Kunnighet"},
         {progressbar: 50},
         {subtitle: "Detaljer"},
-        {paragraph: "I kursen \"Systemutveckling och projekt\" använde vi YouTrack för att logga issues, tidsestimering och etc."}
+        {paragraph: "I kursen \"System Engineering och projekt\" använde vi YouTrack för att logga issues, tidsestimering och etc."}
       ]
     },
 
     {
-      section: "Systemutveckling",
+      section: "System Engineering",
       content: [
         {title: "Agila processer"},
         {divider: "full"},
@@ -615,7 +615,7 @@ const storage = {
     },
 
     {
-      section: "Övrigt",
+      section: "Other",
       content: [
         {title: "Adobe Photoshop"},
         {divider: "full"},
@@ -627,7 +627,7 @@ const storage = {
     },
 
     {
-      section: "Övrigt",
+      section: "Other",
       content: [
         {title: "UNIX-system, BASH etc."},
         {divider: "full"},
@@ -639,7 +639,7 @@ const storage = {
     },
 
     {
-      section: "Övrigt",
+      section: "Other",
       content: [
         {title: "Python"},
         {divider: "full"},
@@ -651,7 +651,7 @@ const storage = {
     },
 
     {
-      section: "Övrigt",
+      section: "Other",
       content: [
         {title: "PostgreSQL"},
         {divider: "full"},
@@ -663,7 +663,7 @@ const storage = {
     },
 
     {
-      section: "Övrigt",
+      section: "Other",
       content: [
         {title: "Java"},
         {divider: "full"},
@@ -675,7 +675,7 @@ const storage = {
     },
 
     {
-      section: "Arbetslivserfarenhet",
+      section: "Experience",
       content: [
         {title: "Sammanfattning"},
         {divider: "full"},
@@ -685,7 +685,7 @@ const storage = {
     },
 
     {
-      section: "Arbetslivserfarenhet",
+      section: "Experience",
       content: [
         {title: "HiQ Skåne AB"},
         {divider: "full"},
@@ -701,7 +701,7 @@ const storage = {
     },
 
     {
-      section: "Arbetslivserfarenhet",
+      section: "Experience",
       content: [
         {title: "Trialbee AB"},
         {divider: "full"},
@@ -717,7 +717,7 @@ const storage = {
     },
 
     {
-      section: "Arbetslivserfarenhet",
+      section: "Experience",
       content: [
         {title: "Malmö Universitet"},
         {divider: "full"},
@@ -733,7 +733,7 @@ const storage = {
     },
 
     {
-      section: "Arbetslivserfarenhet",
+      section: "Experience",
       content: [
         {title: "Malmö Universitet"},
         {divider: "full"},
@@ -749,7 +749,7 @@ const storage = {
     },
 
     {
-      section: "Arbetslivserfarenhet",
+      section: "Experience",
       content: [
         {title: "XTZ AB"},
         {divider: "full"},
@@ -765,7 +765,7 @@ const storage = {
     },
 
     {
-      section: "Arbetslivserfarenhet",
+      section: "Experience",
       content: [
         {title: "Cherry Casino AB"},
         {divider: "full"},
@@ -779,7 +779,7 @@ const storage = {
     },
 
     {
-      section: "Arbetslivserfarenhet",
+      section: "Experience",
       content: [
         {title: "Espresso House AB"},
         {divider: "full"},
@@ -793,7 +793,7 @@ const storage = {
     },
 
     {
-      section: "Arbetslivserfarenhet",
+      section: "Experience",
       content: [
         {title: "Mossbystrands kiosk"},
         {divider: "full"},
@@ -807,7 +807,7 @@ const storage = {
     },
 
     {
-      section: "Arbetslivserfarenhet",
+      section: "Experience",
       content: [
         {title: "Dresser Wayne AB"},
         {divider: "full"},
@@ -821,7 +821,7 @@ const storage = {
     },
 
     {
-      section: "Projekt",
+      section: "Projects",
       content: [
         {title: "Bitburnn"},
         {divider: "full"},
@@ -832,7 +832,7 @@ const storage = {
     },
 
     {
-      section: "Projekt",
+      section: "Projects",
       content: [
         {title: "WhatRemote"},
         {divider: "full"},
@@ -844,7 +844,7 @@ const storage = {
     },
 
     {
-      section: "Projekt",
+      section: "Projects",
       content: [
         {title: "WhatRemote 2 (Ongoing)"},
         {divider: "full"},
@@ -856,7 +856,7 @@ const storage = {
     },
 
     {
-      section: "Projekt",
+      section: "Projects",
       content: [
         {title: "Stefan Generalao-CV"},
         {divider: "full"},
@@ -868,19 +868,19 @@ const storage = {
     },
 
     {
-      section: "Projekt",
+      section: "Projects",
       content: [
         {title: "Eventizer (Ongoing)"},
         {divider: "full"},
         {subtitle: "Detaljer om projektet"},
-        {paragraph: "Projektarbete till kursen \"Systemutveckling och projekt\". Projektets mål är att under utställningsdagen presentera andra studenters projekt med vår webbapplikation. Webbapplikationens klientsida är skriven i ReactJS och serversida i NodeJS. I projektet prioriteras scrum och dokumentation."},
+        {paragraph: "Projektarbete till kursen \"System Engineering och projekt\". Projektets mål är att under utställningsdagen presentera andra studenters projekt med vår webbapplikation. Webbapplikationens klientsida är skriven i ReactJS och serversida i NodeJS. I projektet prioriteras scrum och dokumentation."},
         {subtitle: "Länk"},
         {link: "https://github.com/stefangeneralao/eventizer"}
       ]
     },
 
     {
-      section: "Projekt",
+      section: "Projects",
       content: [
         {title: "Genetic Path Finder"},
         {divider: "full"},
@@ -892,7 +892,7 @@ const storage = {
     },
 
     {
-      section: "Projekt",
+      section: "Projects",
       content: [
         {title: "Digital Stargazing"},
         {divider: "full"},
@@ -904,41 +904,41 @@ const storage = {
     },
 
     {
-      section: "Språk",
+      section: "Language",
       content: [
         {title: "Svenska"},
         {divider: "full"},
-        {subtitle: "Nivå"},
+        {subtitle: "Level"},
         {paragraph: "Native"}
       ]
     },
 
     {
-      section: "Språk",
+      section: "Language",
       content: [
         {title: "Engelska"},
         {divider: "full"},
-        {subtitle: "Nivå"},
+        {subtitle: "Level"},
         {paragraph: "Fluent"}
       ]
     },
 
     {
-      section: "Språk",
+      section: "Language",
       content: [
         {title: "Tyska"},
         {divider: "full"},
-        {subtitle: "Nivå"},
+        {subtitle: "Level"},
         {paragraph: "Novice"}
       ]
     },
 
     {
-      section: "Språk",
+      section: "Language",
       content: [
         {title: "Cebuano"},
         {divider: "full"},
-        {subtitle: "Nivå"},
+        {subtitle: "Level"},
         {paragraph: "Novice"}
       ]
     }
